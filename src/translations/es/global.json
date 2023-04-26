@@ -1,0 +1,159 @@
+{
+  "navbar": {
+    "provision": "disponible",
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "faqs": "FAQs"
+  },
+
+  "reasons": {
+    "subtitle": "¿Por qué yo?",
+    "title": "Diseños llevados a realidad, con un poco de esencia",
+    "list-1": "Diseños",
+    "rea-title-1": "Ten una web completamente tuya",
+    "rea-info-1": "Realizo el diseño de cada web y después las llevo a producción. Podrá ver el diseño antes de desarrollarlo.",
+    "list-2": "Confiable",
+    "rea-title-2": "No le dejo solo despúes del trabajo",
+    "rea-info-2": "Tengo compromiso con los clientes. No le dejaré solo después del proyecto.",
+    "list-3": "Calidad",
+    "rea-title-3": "Sitios web faciles de entender",
+    "rea-info-3": "Intento dentro de lo posible que todos mis proyectos sean realizados de una manera fácil de entender e intuitivos.",
+    "list-4": "Garantía",
+    "rea-title-4": "¡Pruébame, sin riesgos!",
+    "rea-info-4": "Si no está satisfecho con el diseño después del primer borrador, le reembolsaré su depósito, sin hacer preguntas."
+  },
+
+  "header": {
+    "subtitle": "Hey, soy Natalio Rabasco",
+    "title": "Desarrollador Web & Diseñador Gráfico",
+    "paragraph": "Un simple desarrollador web y diseñador gráfico de Alicante, con pasión por la programación",
+    "btn-contact": "Trabaja conmigo",
+    "btn-learnmore": "Aprende más"
+  },
+
+  "abilities": {
+    "subtitle": "Características",
+    "title": "El futuro del desarrollo",
+    "hab-1-title": "Optimización web",
+    "hab-1-subtitle": "El flujo de las páginas es rápido. Pruebe mi sitio en",
+    "hab-1-link": "GTMetrix",
+    "hab-2-title": "Desarrollo rápido",
+    "hab-2-subtitle": "Con herramientas como React o Wordpress me permite crear sitios web rápidamente.",
+    "hab-3-title": "Actualizaciónes fácilmente",
+    "hab-3-subtitle": "Si se usa Wordpress entre otros CRMs, se puede actualizar el contenido muy facilmente.",
+    "hab-4-title": "Verificación por los mejores",
+    "hab-4-subtitle": "Muchas empresas han optado por usar CRMs o sistemas como React, Angular y muchos más.",
+    "hab-5-title": "Flexible y escalable",
+    "hab-5-subtitle": "Construyo webs sólidas para que su sitio pueda crecer y escalar sin problema alguno.",
+    "hab-6-title": "Libertad de diseño",
+    "hab-6-subtitle": "Si puede imaginarlo, se podrá construir y ver en funcionamiento."
+  },
+
+  "work": {
+    "subtitle": "trabajo",
+    "title": "Una pequeña muestra de mis trabajos",
+    "work-cat-01": "Diseño y flujo web",
+    "work-cat-02": "E-commerce",
+    "work-cat-03": "Diseño",
+    "work-cat-04": "Diseño gráfico",
+    "work1-paragraph": "Somos un equipo joven y emprendedor que después de 10 años de experiencia en la reparación de telefonía y videoconsolas en la provincia de Alicante, estamos preparados para ofrecer nuestra experiencia al mejor precio y con las máximas garantías a todo el país.",
+    "work2-paragraph": "Somos una empresa dedicada ala venta de productos tecnológicos especializada en la reparación de dispositivos electrónicos como smartphones, consolas o incluso televisores.",
+    "button": "Ver proyecto"
+  },
+
+  "banner": {
+    "title": "¡Pruébame, sin riesgos!",
+    "subtitle": "Si no está satisfecho con el diseño después del primer borrador, le reembolsaré su depósito, sin hacer preguntas.",
+    "button": "Trabaja conmigo"
+  },
+
+  "process": {
+    "subtitle": "Proceso",
+    "title": "Está a 5 pasos de un nuevo sitio web...",
+    "button": "Trabaja conmigo",
+    "pro-1-title": "Descubrimiento",
+    "pro-1-description": "Para comenzar, comenzamos con una sesión de descubrimiento para que pueda aprender más sobre su negocio y lo que está tratando de lograr con su nuevo sitio web.",
+    "pro-2-title": "Estructura",
+    "pro-2-description": "Crearé la estructura de todo el sitio para establecer el flujo del sitio web y cómo presentaremos su producto o servicio para lograr mejor sus objetivos.",
+    "pro-3-title": "Diseño",
+    "pro-3-description": "A continuación, convertiré esta estructura en diseños completamente pulidos. En este punto, podrá ver cómo se verá el sitio web terminado.",
+    "pro-4-title": "Desarrollo",
+    "pro-4-description": "Una vez que esté completamente satisfecho con el diseño, lo construiré en React o en algún CRM dependiendo del sitio, para que sea muy fácil de actualizar.",
+    "pro-5-title": "Lanzamiento",
+    "pro-5-description": "Le ayudaré a configurar una cuenta del CRM usado antes de transferirte el sitio web. Una vez que se transfiera, lo capacitaré sobre cómo usar el sitio para que pueda administrarlo usted mismo fácilmente."
+  },
+
+  "faqs": {
+    "subtitle": "Faqs",
+    "title": "Preguntas frecuentes",
+    "faq-1-question": "¿Cuánto tiempo se tarda en construir un sitio web?",
+    "faq-1-answer": "Un proyecto típico tomará desde 4-8 semanas hasta 12 meses, y su ubicación en ese rango depende de:",
+    "faq-1-answer-2": "- Tamaño del sitio web (es decir, cuántas páginas)",
+    "faq-1-answer-3": "- Complejidad de diseño.",
+    "faq-1-answer-4": "- Velocidad de retroalimentación y comunicación.",
+    "faq-2-question": "¿Cuánto cuesta un sitio web?",
+    "faq-2-answer": "Hay muchos factores que influyen en cuánto termina costando un sitio web, pero utilizo precios estandarizados para que sepa que siempre está pagando un precio justo.",
+    "faq-2-answer-2": "La mayoría de los sitios web nuevos caerán en el rango de 600€-10k€.",
+    "faq-2-answer-3": "Sin embargo, todas las situaciones son diferentes, así que póngase en contacto y le daré un presupuesto.",
+    "faq-3-question": "Ya tengo un diseño. ¿Puedes construirlo?",
+    "faq-3-answer": "¡Sí! Puedo participar en cualquier etapa del proceso.",
+    "faq-4-question": "¿Qué pasa si no me gusta el diseño?",
+    "faq-4-answer": "Tengo una garantía de devolución del 100% del dinero hasta que vea el primer borrador del diseño, así que si no le gusta en ese momento, le reembolsaré el depósito",
+    "faq-5-question": "El tiempo de carga es importante para mí. ¿El sitio web se cargará rápidamente?",
+    "faq-5-answer": "¡Sí! Soy excelente para crear sitios web de carga rápida. Revisa mi sitio en GTMetrix para verlo por ti mismo."
+  },
+
+  "contact": {
+    "title": "Empezemos",
+    "subtitle": "¡Rellena el siguiente formulario y me pondré en contacto LO ANTES POSIBLE!",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "website": "URL del sitio web actual (si corresponde)",
+    "budget": "Presupuesto estimado",
+    "bud-01": "<600€",
+    "bud-02": "600-2k€",
+    "bud-03": ">5k€",
+    "service": "¿Qué servicio está buscando?",
+    "ser-01": "Diseño",
+    "ser-02": "Desarrollo Web",
+    "ser-03": "Diseño y Desarrollo",
+    "ser-04": "No es seguro",
+    "about": "Cuéntame un poco sobre el proyecto.",
+    "date": "Fecha ideal de lanzamiento",
+    "find": "¿Cómo me encontraste?",
+    "select": "Seleccione uno...",
+    "button": "Empecemos"
+  },
+
+  "about": {
+    "subtitle": "Sobre mi",
+    "title": "Hola, soy Natalio Rabasco",
+    "subtitle-2": "Mis proximos pasos",
+    "title-2": "¿Qué haré en el futuro?",
+    "paragraph-01": "Me presento, soy aquel chico que desde siempre le ha costado estudiar, que suspedía todo, el que se pasaba el día delante de un libro sin aprender nada y perdiendo el tiempo. Y sí, el sistema educativo no vale una mi**** pero no me pondré a darte la chapa con esto. No estoy aquí para eso, mi misión es aportar un granito más a Internet.",
+    "paragraph-02": "Con el tiempo he conseguido centrarme y avanzar en la vida, tener un propósito y una meta que conseguir. Gracias a ello estoy aquí hoy y te contaré un poco de mi vida para que veas que tú también puedes.",
+    "paragraph-03": "Nací en Almoradí (un pueblo pequeño en la provincia de Alicante) el 28 de Agosto de 2001. Terminé la ESO por el 2019 repitiendo 3º, donde continué estudiando un ciclo formativo de grado medio en Sistemas Microinformáticos y Redes que lo terminé en 2021. Al acabarlo, decidí pasarme de centro donde continué mis estudios en un ciclo formativo de grado superior en Desarrollo de Aplicaciones Web finalizado en 2023.",
+    "paragraph-04": "Cuando entré en la ESO, mi vida solo consistía en ir al instituto (obligado y sin ilusión), volver a casa encerrarme y ponerme delante de un llibro a \"estudiar\"; y si, digo esto estre comillas porque lo que se dice estudiar como que no. Simplemente dejaba pasar las horas un dia tras otro perdiendo el tempo, hasta que descubrí el gran mundo que ahora se le conoce como Internet.",
+    "paragraph-05": "Ahora que ya sabés un poco más de mi, te estarás preguntando cómo he podido aprender desarrollo web antes de poder estudiarlo, o incluso como estoy trabajando de ello siendo tan joven. Pues te lo explicaré con más detalle:",
+    "paragraph-06": "A mi siempre me ha llamado la atención todo lo relacionado con la informática y la tecnología en si; desde muy pequeño he tenido interés por este mundo tan interesante. Por el 2017 emprendí mi aventura con la programación, sin tener ni idea por donde empezar o que es realmente, ya que para mí era algo totalmente desconocido pero no por ello menos interesante. No sabía que habían tantos tipos de lenguajes, ni tantas reglas a la hora de programar. Todo era cuestión de \"tiempo y esfuerzo\" para aprender y comenzar a realizar mis primeros proyectos.",
+    "paragraph-07": "Empecé creando webs sencillas y casi sin decoración, sin funciones ni animaciones, algo que hoy en día no sirve de nada pero que para mi por aquel entonces era algo realmente increíble. En unas semanas ya había podido lograr crear una web desde cero; aunque todo seguía siendo un poco complicado y me seguían costando aun muchas cosas, yo seguía programando horas y horas sin hacer nada mas que eso. Con forme pasaban los meses mis conocimientos en el sector iban aumentando hasta el punto de poder crear webs con decoraciones, animaciones y efectos... Páginas hasta con diseños adaptados a dispositivos móviles, y sin darme cuenta en tan solo 1 año ya me podía defender desarrollando webs.",
+    "paragraph-08": "Era hora de dar el siguiente paso y aprender nuevos lenguajes y usar múltiples sistemas de programación para mejorar mis proyectos, consiguiendo así crear diversas páginas iterativas, usando \"APIs\" para desarrollar mapas, definiciones del tiempo, y pequeños juegos.",
+    "paragraph-09": "Se fue corriendo la voz de que podía crear webs incluso tiendas online por toda mi zona, cuando me llamaron de una empresa que necesitaban una Tienda Online para vender sus productos a la que me ofrecí para realizar ese proyecto. Comencé a trabajar en dicha empresa en la que estoy actualmente siendo desarrollador web, y donde he diseñado e implementado una funcional web de compras de productos informáticos. La cual dedico mi tiempo en mejorar cada día y seguir añadiendo nuevas funciones para dar más funcionalidad y comodidad al cliente.",
+    "paragraph-10": "Ademas, estoy trabajando en un nuevo proyecto que saldrá dentro de poco a la luz, un proyecto el cual tengo muchas ganas de que se pueda contar y lo puedas ver. Ahora no es posible poder contar nada ya que faltan algunos retoques finales y como es de esperar, no trabajo únicamente yo solo en dicho proyecto, cuento con más personas que están involucradas en ello.",
+    "paragraph-11": "Pues el futuro por desgracia no se puede saber, pero lo que si se, es que mi carrera como desarrollador no termina aquí. Esto no ha hecho más que empezar.",
+    "paragraph-12": "Dedicaré todo mi esfuerzo y una gran parte de mi vida para seguir por este increíble camino, que me guiará siempre a realizar nuevos proyectos y conocer a muchas personas que compartan las mismas ideas que yo. Y si te gusta lo mismo que a mi, pero no sabes si dar el paso o no para empezar tu camino, déjame decirte una cosa:",
+    "paragraph-13": "Animo a todas y cada una de las personas de este mundo a que se adentre en este \"mundillo\" de la programación porque realmente es el futuro del mundo, te hará llegar muy lejos, siempre podrás estar aprendiendo algo nuevo y podrás disfrutar llevando tus ideas a la realidad. Porque si lo puedes imaginar, lo puedes programar.",
+    "paragraph-14": "Puede llegar a ser muy frustrante al principio y puede que no te guste pero en cuanto tomes agilidad verás como se te abrirán una gran cantidad de puertas que podrás descubrir por ti mismo.",
+    "": ""
+  },
+
+  "footer": {
+    "links": "Enlaces",
+    "follow": "Sígueme",
+    "email": "¿Tienes una pregunta? Envíame un correo electrónico a ",
+    "copy": "Creado con ❤️ por mi."
+  }
+}

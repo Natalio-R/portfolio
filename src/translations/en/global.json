@@ -1,0 +1,158 @@
+{
+  "navbar": {
+    "provision": "available",
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "faqs": "FAQs"
+  },
+
+  "header": {
+    "subtitle": "Hey, I'm Natalio Rabasco",
+    "title": "Web Developer & Graphic Designer",
+    "paragraph": "A simple web developer and graphic designer from Alicante, with a passion for programming",
+    "btn-contact": "Work with me",
+    "btn-learnmore": "Learn more"
+  },
+
+  "reasons": {
+    "subtitle": "Why me?",
+    "title": "Designs brought to reality, with a bit of essence",
+    "list-1": "Designs",
+    "rea-title-1": "Have a website completely yours",
+    "rea-info-1": "I make the design of each web and then I take them to production. You will be able to see the design before developing it.",
+    "list-2": "Reliable",
+    "rea-title-2": "I don't leave you alone after work",
+    "rea-info-2": "I have a commitment to clients. I won't leave you alone after the project.",
+    "list-3": "Quality",
+    "rea-title-3": "Easy to understand websites",
+    "rea-info-3": "I try as much as possible that all my projects are carried out in an easy to understand and intuitive way.",
+    "list-4": "Guarantee",
+    "rea-title-4": "Try me, risk free!",
+    "rea-info-4": "If you're not satisfied with the design after the first draft, I'll refund your deposit, no questions asked."
+  },
+
+  "abilities": {
+    "subtitle": "Characteristics",
+    "title": "The future of development",
+    "hab-1-title": "Website optimization",
+    "hab-1-subtitle": "The flow of the pages is fast. Try my site on",
+    "hab-1-link": "GTMetrix",
+    "hab-2-title": "Rapid development",
+    "hab-2-subtitle": "With tools like React or Wordpress it allows me to create websites quickly.",
+    "hab-3-title": "Easy updates",
+    "hab-3-subtitle": "If Wordpress is used among other CRMs, you can update the content very easily.",
+    "hab-4-title": "Verification by the best",
+    "hab-4-subtitle": "Many companies have chosen to use CRMs or systems like React, Angular and many more.",
+    "hab-5-title": "Flexible and scalable",
+    "hab-5-subtitle": "I build solid websites so that your site can grow and scale without any problem.",
+    "hab-6-title": "Design freedom",
+    "hab-6-subtitle": "If you can imagine it, it can be built and seen in operation."
+  },
+
+  "work": {
+    "subtitle": "Work",
+    "title": "A small sample of my work",
+    "work-cat-01": "Design and web flow",
+    "work-cat-02": "E-commerce",
+    "work-cat-03": "Design",
+    "work-cat-04": "Graphic design",
+    "work1-paragraph": "We are a young and enterprising team that after 10 years of experience in the repair of telephones and game consoles in the province of Alicante, we are prepared to offer our experience at the best price and with the maximum guarantees throughout the country.",
+    "work2-paragraph": "We are a company dedicated to the sale of technological products specialized in the repair of electronic devices such as smartphones, consoles or even televisions.",
+    "button": "Show project"
+  },
+
+  "banner": {
+    "title": "Try me out, risk free!",
+    "subtitle": "If you're not happy with the design after the first draft, I'll refund your deposit, no questions asked.",
+    "button": "Work with me"
+  },
+
+  "process": {
+    "subtitle": "Process",
+    "title": "You’re 5 steps away from a new website...",
+    "button": "Work with me",
+    "pro-1-title": "Discovery",
+    "pro-1-description": "To kick things off we start with a discovery session so I can learn more about your business and what you’re trying to achieve with your new website.",
+    "pro-2-title": "Structure",
+    "pro-2-description": "I’ll create the structure for the whole site to establish the flow of the website and how we’ll present your product or service to best achieve your goals.",
+    "pro-3-title": "Design",
+    "pro-3-description": "Next, I'll turn this structure into fully polished designs. At this point, you will be able to see what the finished website will look like.",
+    "pro-4-title": "Development",
+    "pro-4-description": "Once I'm completely happy with the design, I'll build it in React or some CRM depending on the site, so it's very easy to update.",
+    "pro-5-title": "Launch",
+    "pro-5-description": "I will help you set up an account of the used CRM before transferring the website to you. Once you transfer, I will train you on how to use the site so you can easily manage it yourself."
+  },
+
+  "faqs": {
+    "subtitle": "Faqs",
+    "title": "Frequently Asked Questions",
+    "faq-1-question": "How long does a website take to build?",
+    "faq-1-answer": "A typical project will take anywhere from 4-8 weeks to 12 months, and your placement in that range depends on:",
+    "faq-1-answer-2": "- Website size (ie how many pages)",
+    "faq-1-answer-3": "- Complexity of design.",
+    "faq-1-answer-4": "- Feedback and communication speed.",
+    "faq-2-question": "How much does a website cost?",
+    "faq-2-answer": "There’s a lot of factors that go into how much a website ends up costing, but I use standardised pricing so you know you’re always paying a fair price.",
+    "faq-2-answer-2": "Most new websites will fall into the 600€-10k€ range.",
+    "faq-2-answer-3": "All situations are different though, so get in touch and I can give you a  quote.",
+    "faq-3-question": "I have a design already. Can you build it?",
+    "faq-3-answer": "Yep! I can jump in at any stage of the process.",
+    "faq-4-question": "What if I don’t like the design?",
+    "faq-4-answer": "I have a 100% money-back guarantee up until you see the first draft of the design, so if you don't like it at that point I'll refund your deposit.",
+    "faq-5-question": "Load time is important to me. Will the website load quickly?",
+    "faq-5-answer": "Yes! I'm great at building fast loading websites. Checkout my site on GTMetrix to see for yourself."
+  },
+
+  "contact": {
+    "title": "Get started",
+    "subtitle": "Fill out the form below and I'll be in touch ASAP!",
+    "name": "Name",
+    "email": "Email",
+    "website": "Current website URL (if applicable)",
+    "budget": "Estimated Budget",
+    "bud-01": "<600€",
+    "bud-02": "600-2k€",
+    "bud-03": ">5k€",
+    "service": "What services are you looking for?",
+    "ser-01": "Design",
+    "ser-02": "Web Development",
+    "ser-03": "Design & Development",
+    "ser-04": "Not sure",
+    "about": "Tell me a bit about the project",
+    "date": "Ideal launch date",
+    "find": "How did you find me?",
+    "select": "Select one...",
+    "button": "Get started"
+  },
+
+  "about": {
+    "subtitle": "About me",
+    "title": "Hey, I'm Natalio Rabasco",
+    "subtitle-2": "My next Steps",
+    "title-2": "What will I do in the future?",
+    "paragraph-01": "I introduce myself, I am that boy who has always had a hard time studying, who failed everything, who spent the day in front of a book without learning anything and wasting time. And yes, the educational system is not worth a sh## but I will not get to give you the sheet with this. I'm not here for that, my mission is to contribute one more bit to the Internet.",
+    "paragraph-02": "Over time I have managed to focus and move forward in life, have a purpose and a goal to achieve. Thanks to this I am here today and I will tell you a little about my life so that you can see that you can too.",
+    "paragraph-03": "I was born in Almoradí (a small town in the province of Alicante) on August 28, 2001. I finished ESO in 2019 repeating 3rd, where I continued studying a medium-level training cycle in Microcomputer Systems and Networks that I finished in 2021. Al After finishing it, I decided to transfer to the center where I continued my studies in a higher degree training cycle in Web Application Development completed in 2023.",
+    "paragraph-04": "When I entered ESO, my life only consisted of going to school (forced and without enthusiasm), going back home, locking myself up and sitting in front of a book to \"study\"; And yes, I say this in quotes because what is said to study like no. I just let the hours go by one day after another wasting time, until I discovered the great world that is now known as the Internet.",
+    "paragraph-05": "Now that you know a little more about me, you may be wondering how I was able to learn web development before studying it, or even how I am working on it being so young. Well, I'll explain it to you in more detail:",
+    "paragraph-06": "Everything related to computers and technology itself has always caught my attention; From a very young age I have been interested in this very interesting world. Around 2017 I started my adventure with programming, without having any idea where to start or what it really is, since for me it was something totally unknown but no less interesting. I didn't know that there were so many types of languages, nor so many rules when programming. It was all a matter of \"time and effort\" to learn and start carrying out my first projects.",
+    "paragraph-07": "I started creating simple websites with almost no decoration, no functions or animations, something that today is useless but for me at that time it was something really incredible. In a few weeks I had already been able to create a website from scratch; Although everything was still a bit complicated and many things still cost me, I kept programming hours and hours without doing anything more than that. As the months passed, my knowledge in the sector increased to the point of being able to create websites with decorations, animations and effects... Pages even with designs adapted to mobile devices, and without realizing it, in just 1 year I could already defend myself developing websites.",
+    "paragraph-08": "It was time to take the next step and learn new languages and use multiple programming systems to improve my projects, thus being able to create various iterative pages, using \"APIs\" to develop maps, weather definitions, and small games.",
+    "paragraph-09": "Word spread that I could create websites including online stores throughout my area, when they called me from a company that needed an Online Store to sell their products to which I offered to carry out that project. I started working in that company where I am currently a web developer, and where I have designed and implemented a functional website for purchasing computer products. Which I dedicate my time to improve every day and continue adding new functions to give more functionality and comfort to the client.",
+    "paragraph-10": "In addition, I am working on a new project that will be released shortly, a project that I really want to be able to tell and see. Now it is not possible to be able to tell anything since some final touches are missing and as expected, I am not the only one working on this project, I have more people who are involved in it.",
+    "paragraph-11": "Well, unfortunately, the future cannot be known, but what I do know is that my career as a developer does not end here. This has only started.",
+    "paragraph-12": "I will dedicate all my effort and a large part of my life to continue on this incredible path, which will always guide me to carry out new projects and meet many people who share the same ideas as me. And if you like the same thing as me, but you don't know whether to take the plunge or not to start your journey, let me tell you one thing:",
+    "paragraph-13": "I encourage each and every one of the people in this world to get into this \"world\" of programming because it really is the future of the world, it will take you far, you can always be learning something new and you can enjoy taking your ideas to reality. Because if you can imagine it, you can program it.",
+    "paragraph-14": "It can be very frustrating at first and you may not like it but as soon as you gain agility you will see how many doors will open for you that you will be able to discover for yourself."
+  },
+
+  "footer": {
+    "links": "Links",
+    "follow": "Follow me",
+    "email": "Got a question? Drop me an email at ",
+    "copy": "Created with ❤️ by me."
+  }
+}
