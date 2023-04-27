@@ -11,10 +11,10 @@ const WorkList = () => {
     <section id="works">
       <div className="px-8 py-16 xl:px-0 xl:py-20 mx-auto max-w-screen-xl sm:pt-16">
         <div className="flex flex-col items-center justify-center mb-8 lg:mb-16">
-          <h3 className="mb-4 text-xl text-center font-bold uppercase text-orange-500">
+          <h3 className="mb-2 md:mb-4 text-xl text-center font-bold uppercase text-orange-500">
             {t("work.subtitle")}
           </h3>
-          <h2 className="text-center max-w-2xl text-6xl font-extrabold text-gray-900">
+          <h2 className="text-center max-w-2xl text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900">
             {t("work.title")}
           </h2>
         </div>

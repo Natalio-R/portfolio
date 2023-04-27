@@ -59,34 +59,34 @@ const Reasons = () => {
             <h3 className="mb-4 text-xl font-extrabold uppercase text-orange-500">
               {t("reasons.subtitle")}
             </h3>
-            <h2 className="text-5xl sm:text-6xl max-w-none md:max-w-4xl font-extrabold text-white">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl max-w-none md:max-w-4xl font-extrabold text-white">
               {t("reasons.title")}
             </h2>
-            <div className="sticky top-8 md:top-12 mt-10 bg-gray-800 p-2 rounded-full flex items-center justify-start shadow-xl z-10">
+            <div className="sticky top-8 md:top-12 -ml-4 sm:ml-0 mt-10 mb-8 lg:mb-2 bg-gray-800 p-2 rounded-full flex items-center justify-start shadow-xl z-10">
               <a
                 href="#custom-design"
-                className="rounded-full py-1.5 px-4 text-md md:text-xl font-normal cursor-pointer"
+                className="rounded-full py-1.5 px-4 md:px-4 text-sm sm:text-md md:text-xl font-normal cursor-pointer"
                 ref={customDesign}
               >
                 {t("reasons.list-1")}
               </a>
               <a
                 href="#reliable"
-                className="rounded-full py-1.5 px-6 text-md md:text-xl font-normal cursor-pointer"
+                className="rounded-full py-1.5 px-4 md:px-6 text-sm sm:text-md md:text-xl font-normal cursor-pointer"
                 ref={reliable}
               >
                 {t("reasons.list-2")}
               </a>
               <a
                 href="#quality"
-                className="rounded-full py-1.5 px-6 text-md md:text-xl font-normal cursor-pointer"
+                className="rounded-full py-1.5 px-4 md:px-6 text-sm sm:text-md md:text-xl font-normal cursor-pointer"
                 ref={quality}
               >
                 {t("reasons.list-3")}
               </a>
               <a
                 href="#my-guarantee"
-                className="rounded-full py-1.5 px-6 text-md md:text-xl font-normal cursor-pointer"
+                className="rounded-full py-1.5 px-4 md:px-6 text-sm sm:text-md md:text-xl font-normal cursor-pointer"
                 ref={myGuarantee}
               >
                 {t("reasons.list-4")}
@@ -98,18 +98,18 @@ const Reasons = () => {
                 id="custom-design"
               >
                 <div className="py-0 lg:py-8 flex flex-col items-start justify-center">
-                  <h3 className="text-xl font-bold uppercase text-orange-500">
+                  <h3 className="text-lg sm:text-xl font-bold uppercase text-orange-500">
                     {t("reasons.list-1")}
                   </h3>
-                  <h2 className="text-5xl sm:text-6xl text-white font-extrabold mt-4 mb-8">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl text-white font-extrabold mt-2 sm:mt-4 mb-8">
                     {t("reasons.rea-title-1")}
                   </h2>
                   <p className="text-xl text-gray-400 font-normal">
                     {t("reasons.rea-info-1")}
                   </p>
                 </div>
-                <div className="py-10 lg:py-20 flex items-center justify-center lg:pl-44">
-                  <div className="flex flex-col shadow-xl rotate-6">
+                <div className="pt-10 lg:pt-20 mb-20 flex items-center justify-center lg:pl-44">
+                  <div className="flex flex-col shadow-xl lg:rotate-6">
                     <div className="w-full bg-gray-800 flex items-center justify-start rounded-t-xl p-3">
                       <div className="w-3 h-3 rounded-full bg-red-600 mr-2"></div>
                       <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
@@ -128,18 +128,18 @@ const Reasons = () => {
                 id="reliable"
               >
                 <div className="py-0 lg:py-8 flex flex-col items-start justify-center">
-                  <h3 className="text-xl font-bold uppercase text-orange-500">
+                  <h3 className="text-lg sm:text-xl font-bold uppercase text-orange-500">
                     {t("reasons.list-2")}
                   </h3>
-                  <h2 className="text-5xl sm:text-6xl text-white font-extrabold mt-4 mb-8">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl text-white font-extrabold mt-2 sm:mt-4 mb-8">
                     {t("reasons.rea-title-2")}
                   </h2>
                   <p className="text-xl text-gray-400 font-normal">
                     {t("reasons.rea-info-2")}
                   </p>
                 </div>
-                <div className="py-10 lg:py-20 flex items-center justify-center lg:pl-44">
-                  <div className="flex flex-col shadow-xl -rotate-6">
+                <div className="pt-10 lg:pt-20 mb-20 flex items-center justify-center lg:pl-44">
+                  <div className="flex flex-col shadow-xl lg:-rotate-6">
                     <div className="w-full bg-gray-800 flex items-center justify-start rounded-t-xl p-3">
                       <div className="w-3 h-3 rounded-full bg-red-600 mr-2"></div>
                       <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
@@ -158,18 +158,18 @@ const Reasons = () => {
                 id="quality"
               >
                 <div className="py-0 lg:py-8 flex flex-col items-start justify-center">
-                  <h3 className="text-xl font-bold uppercase text-orange-500">
+                  <h3 className="text-lg sm:text-xl font-bold uppercase text-orange-500">
                     {t("reasons.list-3")}
                   </h3>
-                  <h2 className="text-5xl sm:text-6xl text-white font-extrabold mt-4 mb-8">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl text-white font-extrabold mt-2 sm:mt-4 mb-8">
                     {t("reasons.rea-title-3")}
                   </h2>
                   <p className="text-xl text-gray-400 font-normal">
                     {t("reasons.rea-info-3")}
                   </p>
                 </div>
-                <div className="py-10 lg:py-20 flex items-center justify-center lg:pl-44">
-                  <div className="flex flex-col shadow-xl rotate-6">
+                <div className="pt-10 lg:pt-20 mb-20 flex items-center justify-center lg:pl-44">
+                  <div className="flex flex-col shadow-xl lg:rotate-6">
                     <div className="w-full bg-gray-800 flex items-center justify-start rounded-t-xl p-3">
                       <div className="w-3 h-3 rounded-full bg-red-600 mr-2"></div>
                       <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
@@ -188,10 +188,10 @@ const Reasons = () => {
                 id="my-guarantee"
               >
                 <div className="py-0 lg:py-8 flex flex-col items-start justify-center">
-                  <h3 className="text-xl font-bold uppercase text-orange-500">
+                  <h3 className="text-lg sm:text-xl font-bold uppercase text-orange-500">
                     {t("reasons.list-4")}
                   </h3>
-                  <h2 className="text-5xl sm:text-6xl text-white font-extrabold mt-4 mb-8">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl text-white font-extrabold mt-2 sm:mt-4 mb-8">
                     {t("reasons.rea-title-4")}
                   </h2>
                   <p className="text-xl text-gray-400 font-normal">
@@ -205,8 +205,8 @@ const Reasons = () => {
                     <i className="fa-solid fa-arrow-down ml-2"></i>
                   </a>
                 </div>
-                <div className="py-10 lg:py-20 flex items-center justify-center lg:pl-44">
-                  <div className="flex flex-col shadow-xl -rotate-6">
+                <div className="pt-10 lg:pt-20 mb-20 flex items-center justify-center lg:pl-44">
+                  <div className="flex flex-col shadow-xl lg:-rotate-6">
                     <div className="w-full bg-gray-800 flex items-center justify-start rounded-t-xl p-3">
                       <div className="w-3 h-3 rounded-full bg-red-600 mr-2"></div>
                       <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>

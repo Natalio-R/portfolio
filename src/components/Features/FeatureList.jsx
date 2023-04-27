@@ -17,10 +17,10 @@ const FeatureList = () => {
     <section id="features" className="bg-white">
       <div className="py-10 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="w-full mb-8 lg:mb-16">
-          <h3 className="mb-4 text-xl text-center font-bold uppercase text-orange-500">
+          <h3 className="mb-2 md:mb-4 text-xl text-center font-bold uppercase text-orange-500">
             {t("abilities.subtitle")}
           </h3>
-          <h2 className="text-center text-6xl font-extrabold text-gray-900">
+          <h2 className="text-center text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900">
             {t("abilities.title")}
           </h2>
         </div>

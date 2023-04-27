@@ -8,10 +8,10 @@ const Faqs = () => {
     <div className="bg-white" id="faqs">
       <div className="py-20 mx-10 md:mx-auto max-w-screen-md">
         <div className="flex flex-col items-center justify-center">
-          <h3 className="mb-4 text-xl text-center font-bold uppercase text-orange-500">
+          <h3 className="mb-2 md:mb-4 text-xl text-center font-bold uppercase text-orange-500">
             {t("faqs.subtitle")}
           </h3>
-          <h2 className="text-center max-w-2xl text-6xl font-extrabold text-gray-900">
+          <h2 className="text-center max-w-2xl text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900">
             {t("faqs.title")}
           </h2>
         </div>
@@ -25,7 +25,7 @@ const Faqs = () => {
           <h2 id="accordion-flush-heading-1">
             <button
               type="button"
-              className="flex items-center justify-between w-full py-5 text-xl font-bold text-left text-gray-900 border-y border-gray-900"
+              className="flex items-center justify-between w-full py-5 text-lg md:text-xl font-bold text-left text-gray-900 border-y border-gray-900"
               data-accordion-target="#accordion-flush-body-1"
               aria-expanded="true"
               aria-controls="accordion-flush-body-1"
@@ -51,7 +51,7 @@ const Faqs = () => {
             className="hidden"
             aria-labelledby="accordion-flush-heading-1"
           >
-            <div className="py-5 border-b border-gray-900 text-xl">
+            <div className="py-5 border-b border-gray-900 text-lg md:text-xl">
               <p className="text-gray-500">{t("faqs.faq-1-answer")}</p>
               <p className="text-gray-500">{t("faqs.faq-1-answer-2")}</p>
               <p className="text-gray-500">{t("faqs.faq-1-answer-3")}</p>
@@ -61,7 +61,7 @@ const Faqs = () => {
           <h2 id="accordion-flush-heading-2">
             <button
               type="button"
-              className="flex items-center justify-between w-full py-5 text-xl font-bold text-left text-gray-900 border-b border-gray-900"
+              className="flex items-center justify-between w-full py-5 text-lg md:text-xl font-bold text-left text-gray-900 border-b border-gray-900"
               data-accordion-target="#accordion-flush-body-2"
               aria-expanded="true"
               aria-controls="accordion-flush-body-2"
@@ -87,7 +87,7 @@ const Faqs = () => {
             className="hidden"
             aria-labelledby="accordion-flush-heading-2"
           >
-            <div className="py-5 border-b border-gray-900 text-xl">
+            <div className="py-5 border-b border-gray-900 text-lg md:text-xl">
               <p className="text-gray-500">{t("faqs.faq-2-answer")}</p>
               <p className="my-4 text-gray-500">{t("faqs.faq-2-answer-2")}</p>
               <p className="text-gray-500">{t("faqs.faq-2-answer-3")}</p>
@@ -96,7 +96,7 @@ const Faqs = () => {
           <h2 id="accordion-flush-heading-3">
             <button
               type="button"
-              className="flex items-center justify-between w-full py-5 text-xl font-bold text-left text-gray-900 border-b border-gray-900"
+              className="flex items-center justify-between w-full py-5 text-lg md:text-xl font-bold text-left text-gray-900 border-b border-gray-900"
               data-accordion-target="#accordion-flush-body-3"
               aria-expanded="true"
               aria-controls="accordion-flush-body-3"
@@ -122,14 +122,14 @@ const Faqs = () => {
             className="hidden"
             aria-labelledby="accordion-flush-heading-3"
           >
-            <div className="py-5 border-b border-gray-900 text-xl">
+            <div className="py-5 border-b border-gray-900 text-lg md:text-xl">
               <p className="text-gray-500">{t("faqs.faq-3-answer")}</p>
             </div>
           </div>
           <h2 id="accordion-flush-heading-4">
             <button
               type="button"
-              className="flex items-center justify-between w-full py-5 text-xl font-bold text-left text-gray-900 border-b border-gray-900"
+              className="flex items-center justify-between w-full py-5 text-lg md:text-xl font-bold text-left text-gray-900 border-b border-gray-900"
               data-accordion-target="#accordion-flush-body-4"
               aria-expanded="true"
               aria-controls="accordion-flush-body-4"
@@ -155,14 +155,14 @@ const Faqs = () => {
             className="hidden"
             aria-labelledby="accordion-flush-heading-4"
           >
-            <div className="py-5 border-b border-gray-900 text-xl">
+            <div className="py-5 border-b border-gray-900 text-lg md:text-xl">
               <p className="text-gray-500">{t("faqs.faq-4-answer")}</p>
             </div>
           </div>
           <h2 id="accordion-flush-heading-5">
             <button
               type="button"
-              className="flex items-center justify-between w-full py-5 text-xl font-bold text-left text-gray-900 border-b border-gray-900"
+              className="flex items-center justify-between w-full py-5 text-lg md:text-xl font-bold text-left text-gray-900 border-b border-gray-900"
               data-accordion-target="#accordion-flush-body-5"
               aria-expanded="true"
               aria-controls="accordion-flush-body-5"
@@ -188,7 +188,7 @@ const Faqs = () => {
             className="hidden"
             aria-labelledby="accordion-flush-heading-5"
           >
-            <div className="py-5 border-b border-gray-900 text-xl">
+            <div className="py-5 border-b border-gray-900 text-lg md:text-xl">
               <p className="text-gray-500">{t("faqs.faq-5-answer")}</p>
             </div>
           </div>

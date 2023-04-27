@@ -7,12 +7,12 @@ const ProcessList = () => {
 
   return (
     <div className="w-full bg-gray-900">
-      <div className="px-8 md:px-0 py-16 md:py-20 flex flex-col md:flex-row mx-auto max-w-screen-xl">
-        <div className="md:w-2/4 md:sticky top-12 flex flex-col items-start mb-10 md:mb-0">
-          <h3 className="mb-4 text-xl font-extrabold uppercase text-orange-500">
+      <div className="px-8 lg:px-0 py-16 lg:py-20 flex flex-col lg:flex-row mx-auto max-w-screen-xl">
+        <div className="md:w-2/4 lg:sticky top-12 flex flex-col items-start mb-10 lg:mb-0">
+          <h3 className="mb-2 md:mb-4 text-xl font-extrabold uppercase text-orange-500">
             {t("process.subtitle")}
           </h3>
-          <h2 className="text-5xl md:text-6xl md:max-w-4xl font-extrabold text-white">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl md:max-w-4xl font-extrabold text-white">
             {t("process.title")}
           </h2>
           <a
@@ -23,7 +23,7 @@ const ProcessList = () => {
             <i className="fa-solid fa-arrow-right ml-2"></i>
           </a>
         </div>
-        <div className="md:w-2/4 grid grid-rows-5 gap-y-12">
+        <div className="lg:w-2/4 grid grid-rows-5 gap-y-12">
           <Process
             proId="01"
             proTitle={t("process.pro-1-title")}

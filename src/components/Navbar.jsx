@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="p-4">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center mx-auto max-w-screen-xl">
           <a href="/" className="flex flex-row items-center justify-center">
             <img
               src={NatalioImg}
@@ -30,41 +30,8 @@ const Navbar = () => {
               </p>
             </div>
           </a>
-          <div className="flex items-center lg:order-2">
-            <div className="inline-flex mr-2" role="group">
-              <button
-                type="button"
-                className="rounded-full h-6 w-6 mr-2 shadow-xl"
-              >
-                <img
-                  src={spainFlag}
-                  alt="Spain Flag"
-                  className="h-6 rounded-full"
-                  onClick={() => i18n.changeLanguage("es")}
-                />
-              </button>
-              <button type="button" className="rounded-full h-6 w-6 shadow-xl">
-                <img
-                  src={englandFlag}
-                  alt="England Flag"
-                  className="h-6 rounded-full"
-                  onClick={() => i18n.changeLanguage("en")}
-                />
-              </button>
-            </div>
-            <a
-              href="/contact"
-              className="transition ml-2 text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 font-medium rounded-xl text-sm px-5 py-2.5 text-center shadow-xl"
-            >
-              {t("navbar.contact")}
-              <i className="fa-solid fa-angle-right ml-2"></i>
-            </a>
-          </div>
-          <div
-            className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-            id="mobile-menu-2"
-          >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-4 lg:mt-0">
+          <div className="flex items-center justify-center lg:justify-between my-6 lg:my-0">
+            <ul className="flex flex-row items-center justify-center mt-4 md:mt-0 font-medium space-x-4 ">
               <li>
                 <a
                   href="/"
@@ -94,7 +61,7 @@ const Navbar = () => {
                 <a
                   href="#works"
                   className={
-                    location.pathname === "/projects"
+                    location.pathname === "/works"
                       ? "transition block py-1 px-2 text-gray-900 font-bold rounded-lg bg-gray-200"
                       : "transition block py-1 px-2 text-gray-700 rounded-lg bg-transparent hover:bg-gray-200 hover:text-gray-900"
                   }
@@ -115,6 +82,36 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="inline-flex lg:mr-2">
+              <button
+                type="button"
+                className="rounded-full h-6 w-6 mr-2 shadow-xl"
+              >
+                <img
+                  src={spainFlag}
+                  alt="Spain Flag"
+                  className="h-6 rounded-full"
+                  onClick={() => i18n.changeLanguage("es")}
+                />
+              </button>
+              <button type="button" className="rounded-full h-6 w-6 shadow-xl">
+                <img
+                  src={englandFlag}
+                  alt="England Flag"
+                  className="h-6 rounded-full"
+                  onClick={() => i18n.changeLanguage("en")}
+                />
+              </button>
+            </div>
+            <a
+              href="/contact"
+              className="hidden lg:block transition ml-2 text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 font-medium rounded-xl text-sm px-5 py-2.5 text-center shadow-xl"
+            >
+              {t("navbar.contact")}
+              <i className="fa-solid fa-angle-right ml-2"></i>
+            </a>
           </div>
         </div>
       </nav>

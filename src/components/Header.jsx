@@ -16,16 +16,16 @@ const Header = () => {
           alt="Natalio Rabasco"
           className="w-48 rounded-full mb-4 select-none"
         />
-        <h2 className="md:text-3xl text-2xl font-normal text-center text-black">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-normal text-center text-gray-900">
           {t("header.subtitle")} 👋
         </h2>
-        <h1 className="md:text-6xl text-5xl max-w-2xl font-extrabold text-center my-6 text-black">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl max-w-2xl font-extrabold text-center my-4 md:my-6 text-gray-900">
           {t("header.title")}
         </h1>
-        <p className="md:text-3xl text-2xl md:max-w-xl lg:max-w-2xl xl:max-w-3xl font-light text-center mb-8 text-black">
+        <p className="text-xl sm:text-2xl md:text-3xl max-w-none md:max-w-xl lg:max-w-2xl xl:max-w-3xl font-light text-center mb-8 text-gray-900">
           {t("header.paragraph")}
         </p>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-0">
           <a
             href="/contact"
             className="transition mr-4 px-8 py-6 bg-gradient-to-br from-pink-500 to-orange-400 rounded-xl shadow-xl text-white font-semibold text-xl hover:-rotate-6"
