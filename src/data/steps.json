@@ -1,0 +1,27 @@
+[
+    {
+        "step": "2001-2017:",
+        "name": "Vida pasada",
+        "desc": "Como cualquier persona normal, tuve que ir al colegio y más tarde al instituto. Aunque no me sirvió de nada académicamente, sí me sirvió para tener claro lo que me gustaba hacer y lo que no."
+    },
+    {
+        "step": "2017-2019:",
+        "name": "Comienzo con la programación web",
+        "desc": "Con 16 años pude descubrir el apasionante mundo del desarrollo web, y de manera autodidacta pude adquirir conocimientos básicos sobre ello. Cada día aprendiendo algo nuevo para mejorar más y más."
+    },
+    {
+        "step": "2019-2020:",
+        "name": "Picando código",
+        "desc": "Una vez tuve claro lamación me apasionaba, no paré de practicar hasta día de hoy, día tras día, hora tras hora, minuto tras minuto sin pensar en nada más que eso. Fué una etapa un poco agobiante y frustrante a veces, pero mereció la pena pasar por eso ya que gracias a haberlo hecho, hoy estoy donde estoy."
+    },
+    {
+        "step": "2020-2023:",
+        "name": "Emprendimiento",
+        "desc": "Teniendo conocimientos avanzados de programación, necesitaba mejorar la calidad del mundo digital a otros negocios/empresas, por lo que decidí dar un paso y montar junto a un amigo, nuestra propia agencia digital de desarrollo web y marketing. (Fractal Agency)"
+    },
+    {
+        "step": "Actualidad:",
+        "name": "Desarrollo personal",
+        "desc": "Una vez llegados a este punto, al fin puedo desarrollar mi mentalidad para poder llevar mis pensamientos a un enfoque más profesional, llenarme de nuevas ideas y emprender con proyectos futuros."
+    }
+]

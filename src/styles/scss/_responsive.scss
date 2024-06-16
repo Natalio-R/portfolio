@@ -1,0 +1,795 @@
+@media only screen and (max-width: 1450px) {
+  /* Navbar */
+  .navbar__container {
+    position: sticky;
+    top: 0;
+    width: auto;
+
+    .navbar__content {
+      gap: 40px;
+
+      .navbar__title .title__name {
+        font-size: 22px;
+        line-height: 22px;
+      }
+
+      .navbar__nav .navbar__list {
+        gap: 12px;
+
+        .navbar__list_item .navbar__item_link {
+          font-size: 14px;
+          line-height: 14px;
+          gap: 2px;
+
+          lord-icon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .navbar__buttons .buttons__button {
+        padding: 0 20px;
+        height: 40px;
+
+        .button__link {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  /* Main */
+  #main .main__spline {
+    width: 100%;
+    img {
+      width: 80%;
+    }
+  }
+
+  /* WhyMe */
+  #whyme {
+    width: 100%;
+  }
+
+  /* Steps */
+  #steps {
+    width: 100%;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 100px 80px 120px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  /* Main */
+  #main {
+    padding: 80px;
+  }
+
+  /* Personal */
+  #about {
+    padding: 80px;
+    gap: 48px;
+  }
+
+  /* FAQs */
+  #faqs .faqs__container {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer__container {
+    padding: 80px 100px;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  /* Main */
+  #main .main__spline {
+    display: none;
+  }
+
+  /* WhyMe */
+  #whyme {
+    padding: 80px;
+    .whyme__list .whyme__card {
+      flex-direction: column;
+      gap: 40px;
+
+      .card__content {
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+      }
+    }
+  }
+
+  /* Projects */
+  #projects {
+    padding: 80px;
+
+    .projects__list {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Services */
+  #services .services__list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  /* Personal */
+  #about {
+    flex-direction: column;
+    align-items: center;
+
+    .section__spline {
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* General */
+  .header__content .header__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  /* Navbar */
+  .navbar__container {
+    width: 100%;
+
+    .navbar__content {
+      gap: 12px;
+      padding: 12px 20px 12px 12px;
+
+      .navbar__buttons {
+        display: none;
+      }
+    }
+  }
+
+  /* Main */
+  #main {
+    padding: 40px;
+
+    .main__content {
+      gap: 30px;
+
+      .content__main {
+        gap: 20px;
+
+        .main__title {
+          font-size: 52px;
+          line-height: 59px;
+        }
+      }
+    }
+  }
+
+  /* WhyMe */
+  #whyme {
+    padding: 60px 30px;
+    gap: 30px;
+
+    .whyme__list .whyme__card {
+      padding: 46px;
+
+      .card__content {
+        gap: 20px;
+
+        .content__header {
+          gap: 10px;
+
+          .content__title {
+            font-size: 38px;
+            line-height: 42px;
+          }
+        }
+      }
+
+      .card__image {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Projects */
+  #projects {
+    padding: 60px 30px;
+    gap: 30px;
+
+    .projects__list {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+
+      .project__card .card__image {
+        max-height: none;
+      }
+    }
+  }
+
+  /* Steps */
+  #steps {
+    padding: 60px 30px;
+    gap: 30px;
+
+    .steps__list {
+      max-width: none;
+    }
+  }
+
+  /* Services */
+  #services {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+
+  /* FAQs */
+  #faqs {
+    padding: 60px 30px;
+    gap: 30px;
+
+    .faqs__container .faqs__content {
+      padding: 26px;
+
+      .content__ask {
+        gap: 12px;
+      }
+    }
+  }
+
+  /* Footer */
+  .footer__container {
+    padding: 80px;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 80px 80px 100px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  /* General */
+  .header__content .header__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  /* Navbar */
+  .navbar__container {
+    width: 100%;
+
+    .navbar__content {
+      gap: 12px;
+      padding: 12px 20px 12px 12px;
+
+      .navbar__buttons {
+        display: none;
+      }
+    }
+  }
+
+  /* Main */
+  #main .main__content .main__buttons {
+    margin-top: 0;
+
+    .main__button {
+      width: 250px;
+      padding: 4px;
+
+      .button_primary a,
+      .button_secondary a {
+        width: auto;
+      }
+    }
+  }
+
+  /* Services */
+  #services .services__list {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+
+    .services__card {
+      padding: 30px;
+      height: 300px;
+    }
+  }
+
+  /* Personal */
+  #about {
+    padding: 40px 50px;
+    gap: 48px;
+
+    .section__spline {
+      width: 100%;
+    }
+  }
+
+  /* Contact */
+  #contact form.contact__form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar__container {
+    width: auto;
+
+    .navbar__content {
+      flex-direction: column;
+      padding: 12px 20px;
+    }
+  }
+
+  /* Contact */
+  #contact {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* General */
+  .header__content {
+    gap: 8px;
+
+    .header__subtitle {
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    .header__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    .header__desc {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  /* Navbar */
+  .navbar__container {
+    width: auto;
+
+    .navbar__content {
+      flex-direction: column;
+      padding: 12px 20px;
+    }
+  }
+
+  /* Main */
+  #main .main__content {
+    .content__main .main__title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .main__buttons {
+      width: 100%;
+      margin-top: 0;
+      flex-direction: column;
+
+      .main__button {
+        width: 100%;
+
+        .button_primary a,
+        .button_secondary a {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+
+  /* WhyMe */
+  #whyme {
+    padding: 30px;
+
+    .whyme__list .whyme__card {
+      padding: 36px;
+      gap: 26px;
+
+      .card__content {
+        gap: 16px;
+
+        .content__header {
+          gap: 8px;
+
+          .content__subtitle {
+            font-size: 12px;
+            line-height: 12px;
+          }
+
+          .content__title {
+            font-size: 30px;
+            line-height: 30px;
+          }
+        }
+
+        .content__desc {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  /* Projects */
+  #projects {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  /* Steps */
+  #steps {
+    padding: 30px;
+    gap: 20px;
+
+    .steps__list {
+      .card__content {
+        padding: 12px;
+
+        .content__desc {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+
+      .steps__card {
+        gap: 6px;
+
+        .card__step .step__step .step__name {
+          font-size: 18px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  /* Services */
+  #services {
+    padding: 30px;
+
+    .services__list .services__card {
+      padding: 20px;
+      height: auto;
+      gap: 8px;
+
+      .card__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+
+        lord-icon {
+          width: 34px !important;
+          height: 34px !important;
+        }
+      }
+
+      .card__title {
+        font-size: 24px;
+        line-height: 26px;
+      }
+
+      .card__desc {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  /* Personal */
+  #about {
+    .section__content {
+      gap: 18px;
+
+      h3.content__title {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      p.content__desc {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .content__list .list__item {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .section__spline {
+      display: none;
+    }
+  }
+
+  /* FAQs */
+  #faqs {
+    padding: 30px;
+
+    .faqs__container {
+      .faqs__content {
+        padding: 20px;
+
+        .content__ask {
+          h4.ask__ask {
+            font-size: 18px;
+            line-height: 20px;
+          }
+
+          #ask__icon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        p.content__answer {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      .faqs__content.visible {
+        gap: 8px;
+      }
+    }
+  }
+
+  /* Footer */
+  .footer__container {
+    padding: 30px;
+
+    .footer__content {
+      gap: 25px;
+
+      .content__info .info__texts {
+        .texts__name h2 {
+          font-size: 18px;
+          line-height: 18px;
+        }
+
+        .texts__type p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  /* Contact */
+  #contact {
+    gap: 30px;
+
+    form.contact__form .form__group.double {
+      flex-direction: column;
+
+      .group__input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* Navbar */
+  .navbar__container
+    .navbar__content
+    .navbar__nav
+    .navbar__list
+    .navbar__list_item:nth-child(2) {
+    display: none;
+  }
+
+  /* Main */
+  #main .main__content {
+    .content__main .main__title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .main__buttons {
+      width: 100%;
+      margin-top: 0;
+      flex-direction: column;
+
+      .main__button {
+        width: 100%;
+
+        .button_primary a,
+        .button_secondary a {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+
+  /* WhyMe */
+  #whyme {
+    padding: 30px;
+
+    .whyme__list .whyme__card {
+      padding: 36px;
+      gap: 26px;
+
+      .card__content {
+        gap: 16px;
+
+        .content__header {
+          gap: 8px;
+
+          .content__subtitle {
+            font-size: 12px;
+            line-height: 12px;
+          }
+
+          .content__title {
+            font-size: 30px;
+            line-height: 30px;
+          }
+        }
+
+        .content__desc {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  /* Projects */
+  #projects {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  /* Steps */
+  #steps {
+    padding: 30px;
+    gap: 20px;
+
+    .steps__list {
+      .card__content {
+        padding: 12px;
+
+        .content__desc {
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+
+      .steps__card {
+        gap: 6px;
+
+        .card__step .step__step .step__name {
+          font-size: 18px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  /* Services */
+  #services {
+    padding: 30px;
+
+    .services__list .services__card {
+      padding: 20px;
+      height: auto;
+      gap: 8px;
+
+      .card__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+
+        lord-icon {
+          width: 34px !important;
+          height: 34px !important;
+        }
+      }
+
+      .card__title {
+        font-size: 24px;
+        line-height: 26px;
+      }
+
+      .card__desc {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  /* Personal */
+  #about {
+    .section__content {
+      gap: 18px;
+
+      h3.content__title {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      p.content__desc {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .content__list .list__item {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .section__spline {
+      display: none;
+    }
+  }
+
+  /* FAQs */
+  #faqs {
+    padding: 30px;
+
+    .faqs__container {
+      .faqs__content {
+        padding: 20px;
+
+        .content__ask {
+          h4.ask__ask {
+            font-size: 18px;
+            line-height: 20px;
+          }
+
+          #ask__icon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        p.content__answer {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      .faqs__content.visible {
+        gap: 8px;
+      }
+    }
+  }
+
+  /* Footer */
+  .footer__container {
+    padding: 30px;
+
+    .footer__content {
+      gap: 25px;
+
+      .content__info .info__texts {
+        .texts__name h2 {
+          font-size: 18px;
+          line-height: 18px;
+        }
+
+        .texts__type p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  /* Contact */
+  #contact form.contact__form .form__group input#form__submit {
+    font-size: 18px;
+  }
+}

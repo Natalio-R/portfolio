@@ -1,0 +1,175 @@
+#main {
+  padding: 120px 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+
+  .main__content {
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 56px;
+
+    .content__main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 40px;
+
+      .main__subtitle {
+        padding: 6px 16px 4px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px solid rgb(215, 220, 227);
+        border-radius: 32px;
+
+        p {
+          font-family: "Clash Display", "Poppins", system-ui, -apple-system,
+            "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+          text-align: center;
+
+          span {
+            font-weight: 400;
+            color: $primary;
+          }
+        }
+      }
+
+      .main__title {
+        font-family: "Clash Display", "Poppins", system-ui, -apple-system,
+          "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 79px;
+        text-align: center;
+
+        span {
+          font-weight: 500;
+          color: $primary;
+        }
+      }
+    }
+
+    .main__buttons {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      .main__button {
+        transition: all 0.2s linear;
+        position: relative;
+        width: 310px;
+        padding: 4px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 0.5px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        box-shadow: none;
+
+        .button_primary {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          border-radius: 20px;
+
+          a {
+            position: relative;
+            padding: 22px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            border-radius: 20px;
+            background: linear-gradient(
+              rgb(0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.8) 100%
+            );
+            font-family: "Clash Display", "Poppins", system-ui, -apple-system,
+              "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 100%;
+            color: $white;
+          }
+        }
+
+        .button_secondary {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          border-radius: 20px;
+
+          a {
+            position: relative;
+            padding: 22px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            border-radius: 20px;
+            background: linear-gradient(
+              rgba(255, 255, 255, 0.73) 0%,
+              rgba(255, 255, 255, 0.8) 100%
+            );
+            font-family: "Clash Display", "Poppins", system-ui, -apple-system,
+              "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 100%;
+            color: $black;
+          }
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+
+          .button_primary {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0.602187px 1.08394px -0.833333px,
+              rgba(0, 0, 0, 0.05) 0px 2.28853px 4.11936px -1.66667px,
+              rgba(0, 0, 0, 0.05) 0px 10px 18px -2.5px;
+
+            a {
+              background: linear-gradient(
+                rgb(0, 0, 0) 0%,
+                rgba(26, 26, 26, 0.8) 100%
+              );
+            }
+          }
+
+          .button_secondary {
+            box-shadow: rgba(0, 0, 0, 0.075) 0px 0.36131px 1.66204px -1.33333px,
+              rgba(0, 0, 0, 0.067) 0px 1.37312 6.31635px -2.66667px,
+              rgba(0, 0, 0, 0.02) 0px 6px 27.6px -4px;
+          }
+        }
+      }
+    }
+  }
+
+  .main__spline {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

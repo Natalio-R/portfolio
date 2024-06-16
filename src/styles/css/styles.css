@@ -1,0 +1,1729 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Clash Display";
+  src: local("ClashDisplayExtraLight");
+  src: url("../../assets/fonts/ClashDisplayExtralight.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: local("ClashDisplayLight");
+  src: url("../../assets/fonts/ClashDisplayLight.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: local("ClashDisplayRegular");
+  src: url("../../assets/fonts/ClashDisplayRegular.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: local("ClashDisplayMedium");
+  src: url("../../assets/fonts/ClashDisplayMedium.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: local("ClashDisplaySemiBold");
+  src: url("../../assets/fonts/ClashDisplaySemibold.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: local("ClashDisplayBold");
+  src: url("../../assets/fonts/ClashDisplayBold.otf") format("opentype");
+  font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+p {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(54, 53, 53);
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+  z-index: 999;
+}
+.navbar__container .navbar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  padding: 12px;
+  width: 100%;
+}
+.navbar__container .navbar__content .navbar__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.navbar__container .navbar__content .navbar__title .title__image {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(31, 122, 140);
+  border-radius: 12px;
+}
+.navbar__container .navbar__content .navbar__title .title__image span {
+  height: 35%;
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: rgb(255, 255, 255);
+}
+.navbar__container .navbar__content .navbar__title .title__name {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+}
+.navbar__container .navbar__content .navbar__nav .navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.navbar__container .navbar__content .navbar__nav .navbar__list .navbar__list_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.navbar__container .navbar__content .navbar__nav .navbar__list .navbar__list_item .navbar__item_link {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(0, 0, 0);
+  transition: 0.15s all linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__container .navbar__content .navbar__nav .navbar__list .navbar__list_item:hover .navbar__item_link {
+  color: rgb(31, 122, 140);
+}
+.navbar__container .navbar__content .navbar__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.navbar__container .navbar__content .navbar__buttons .buttons__button {
+  padding: 0 24px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(50% 75% at 50% 50%, rgb(255, 252, 252) 0%, rgba(255, 255, 255, 0.66) 100%);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+.navbar__container .navbar__content .navbar__buttons .buttons__button .button__link {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(0, 0, 0);
+}
+.navbar__container .navbar__content .navbar__buttons .buttons__button:hover {
+  transform: translateY(-3px);
+}
+.navbar__container .navbar__content .navbar__buttons .title__name {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+}
+
+.footer__container {
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  padding: 80px 200px;
+}
+.footer__container .footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+.footer__container .footer__content .content__separator {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(32, 32, 32);
+}
+.footer__container .footer__content .content__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.footer__container .footer__content .content__info .info__image img {
+  box-shadow: rgba(245, 0, 110, 0.58) 0px 4px 12px 0px;
+  border: 3px solid rgb(31, 122, 140);
+  border-radius: 50%;
+  transition: 0.15s all linear;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.footer__container .footer__content .content__info .info__image img:hover {
+  filter: grayscale(0);
+}
+.footer__container .footer__content .content__info .info__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+}
+.footer__container .footer__content .content__info .info__texts .texts__name h2 {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+}
+.footer__container .footer__content .content__info .info__texts .texts__type p {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__container .footer__content .content__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__container .footer__content .content__links .links__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.footer__container .footer__content .content__links .links__menu .menu__link {
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+  transition: 0.15s all linear;
+  cursor: pointer;
+}
+.footer__container .footer__content .content__links .links__menu .menu__link a {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+}
+.footer__container .footer__content .content__links .links__menu .menu__link:hover {
+  border-color: rgb(255, 255, 255);
+}
+.footer__container .footer__content .content__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__container .footer__content .content__copy .copy__text {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header__content .header__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgb(31, 122, 140);
+  text-transform: uppercase;
+  text-align: center;
+}
+.header__content .header__title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 62px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.header__content .header__desc {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(54, 53, 53);
+  text-align: center;
+}
+
+#main {
+  padding: 120px 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+#main .main__content {
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 56px;
+}
+#main .main__content .content__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+#main .main__content .content__main .main__subtitle {
+  padding: 6px 16px 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgb(215, 220, 227);
+  border-radius: 32px;
+}
+#main .main__content .content__main .main__subtitle p {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+}
+#main .main__content .content__main .main__subtitle p span {
+  font-weight: 400;
+  color: rgb(31, 122, 140);
+}
+#main .main__content .content__main .main__title {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 79px;
+  text-align: center;
+}
+#main .main__content .content__main .main__title span {
+  font-weight: 500;
+  color: rgb(31, 122, 140);
+}
+#main .main__content .main__buttons {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#main .main__content .main__buttons .main__button {
+  transition: all 0.2s linear;
+  position: relative;
+  width: 310px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: none;
+}
+#main .main__content .main__buttons .main__button .button_primary {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+}
+#main .main__content .main__buttons .main__button .button_primary a {
+  position: relative;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 20px;
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  color: rgb(255, 255, 255);
+}
+#main .main__content .main__buttons .main__button .button_secondary {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+}
+#main .main__content .main__buttons .main__button .button_secondary a {
+  position: relative;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.73) 0%, rgba(255, 255, 255, 0.8) 100%);
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  color: rgb(0, 0, 0);
+}
+#main .main__content .main__buttons .main__button:hover {
+  transform: translateY(-5px);
+}
+#main .main__content .main__buttons .main__button:hover .button_primary {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.602187px 1.08394px -0.833333px, rgba(0, 0, 0, 0.05) 0px 2.28853px 4.11936px -1.66667px, rgba(0, 0, 0, 0.05) 0px 10px 18px -2.5px;
+}
+#main .main__content .main__buttons .main__button:hover .button_primary a {
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgba(26, 26, 26, 0.8) 100%);
+}
+#main .main__content .main__buttons .main__button:hover .button_secondary {
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 0.36131px 1.66204px -1.33333px, rgba(0, 0, 0, 0.067) 0px 1.37312 6.31635px -2.66667px, rgba(0, 0, 0, 0.02) 0px 6px 27.6px -4px;
+}
+#main .main__spline {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#whyme {
+  padding: 120px 80px 140px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+}
+#whyme .whyme__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 64px;
+  scroll-margin-top: 20px;
+}
+#whyme .whyme__list .whyme__card {
+  position: sticky;
+  top: 40px;
+  padding: 56px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 56px;
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 32px;
+}
+#whyme .whyme__list .whyme__card .card__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+#whyme .whyme__list .whyme__card .card__content .content__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+}
+#whyme .whyme__list .whyme__card .card__content .content__header .content__subtitle {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(31, 122, 140);
+  text-transform: uppercase;
+}
+#whyme .whyme__list .whyme__card .card__content .content__header .content__title {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  color: rgb(0, 0, 0);
+}
+#whyme .whyme__list .whyme__card .card__content .content__desc {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(54, 53, 53);
+}
+#whyme .whyme__list .whyme__card .card__image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  box-shadow: rgba(28, 29, 31, 0.04) 0px 0px 40px 0px, rgba(42, 45, 48, 0.11) 0px 56px 32px 0px;
+}
+#whyme .whyme__list .whyme__card .card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+#services {
+  padding: 120px 80px;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 80px;
+  border-radius: 32px;
+  background: radial-gradient(41.8% 100% at 48.9% 17.8%, #ffffff 0%, rgb(245, 245, 245) 100%);
+}
+#services .services__list {
+  padding: 0;
+  width: 100%;
+  display: grid;
+  flex: none;
+  gap: 20px;
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  height: min-content;
+  justify-content: center;
+}
+#services .services__list .services__card {
+  padding: 40px;
+  width: 100%;
+  height: 400px;
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 35px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.0392156863);
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: start;
+  justify-content: space-between;
+  justify-self: start;
+  overflow: hidden;
+  transition: 0.16s all linear;
+}
+#services .services__list .services__card:hover {
+  transform: rotate(3deg);
+}
+#services .services__list .services__card:nth-child(1) {
+  background: linear-gradient(180deg, #edf8ff 0%, rgb(255, 255, 255) 100%);
+}
+#services .services__list .services__card:nth-child(2) {
+  background: linear-gradient(180deg, #ffe6f4 0%, rgb(255, 255, 255) 100%);
+}
+#services .services__list .services__card:nth-child(3) {
+  background: linear-gradient(180deg, #e6fad9 0%, rgb(255, 255, 255) 100%);
+}
+#services .services__list .services__card:nth-child(4) {
+  background: linear-gradient(180deg, #ffe6f4 0%, rgb(255, 255, 255) 100%);
+}
+#services .services__list .services__card:nth-child(5) {
+  background: linear-gradient(180deg, #e5fad7 0%, rgb(255, 255, 255) 100%);
+}
+#services .services__list .services__card:nth-child(6) {
+  background: linear-gradient(180deg, #edf8ff 0%, rgb(255, 255, 255) 100%);
+}
+#services .services__list .services__card .card__icon {
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgb(255, 255, 255) 100%);
+  border-radius: 20px;
+  border: 4px solid rgb(255, 255, 255);
+}
+#services .services__list .services__card .card__title {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  color: rgb(0, 0, 0);
+}
+#services .services__list .services__card .card__desc {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(54, 53, 53);
+}
+
+#projects {
+  padding: 120px 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  border-radius: 80px;
+  background: linear-gradient(180deg, #ffffff 0%, rgb(237, 237, 237) 100%);
+}
+#projects .projects__list {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  flex: none;
+  gap: 24px;
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  justify-content: center;
+}
+#projects .projects__list .project__card {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 16.9756px 23.0064px -16px, rgba(0, 0, 0, 0.04) 0px 76px 80px -16px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.15s all linear;
+}
+#projects .projects__list .project__card .card__image {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 20px;
+  transition: 0.15s all linear;
+}
+#projects .projects__list .project__card .card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+#projects .projects__list .project__card .card__info h3.info__title {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgb(0, 0, 0);
+}
+#projects .projects__list .project__card:hover {
+  border-radius: 22px;
+}
+#projects .projects__list .project__card:hover .card__image {
+  border-radius: 10px;
+}
+
+#steps {
+  padding: 120px 80px;
+  width: 1440px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 56px;
+}
+#steps .steps__list {
+  padding: 0;
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#steps .steps__list .steps__card {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid rgb(215, 220, 227);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+#steps .steps__list .steps__card .card__step {
+  padding: 16px 24px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#steps .steps__list .steps__card .card__step .step__step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+#steps .steps__list .steps__card .card__step .step__step .step__name {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+}
+#steps .steps__list .steps__card .card__step .step__step #step__icon {
+  width: 31px;
+  height: 31px;
+  fill: rgb(255, 255, 255);
+}
+#steps .steps__list .steps__card .card__step .step__lines {
+  position: absolute;
+  padding: 8px;
+  width: 645px;
+  height: 562px;
+  top: calc(50.1138952164% - 281px);
+  left: calc(49.7126436782% - 322.5px);
+  display: flex;
+  flex: none;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  transform: rotate(45deg) translateZ(0px);
+  overflow: visible;
+  opacity: 1;
+}
+#steps .steps__list .steps__card .card__step .step__lines .lines__line {
+  position: relative;
+  flex: 1 0 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.06);
+  opacity: 1;
+}
+#steps .steps__list .steps__card:nth-child(odd) .card__step {
+  background-color: rgb(33, 168, 46);
+}
+#steps .steps__list .steps__card:nth-child(even) .card__step {
+  background-color: rgb(0, 97, 255);
+}
+#steps .steps__list .steps__card:last-child .card__step {
+  background-color: rgb(250, 64, 131);
+}
+#steps .steps__list .card__content {
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  overflow: visible;
+  opacity: 0;
+  transition: display 0.3s ease-out, max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+#steps .steps__list .card__content .content__desc {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: rgb(54, 53, 53);
+}
+#steps .steps__list .card__content.visible {
+  display: flex;
+  max-height: 200px;
+  opacity: 1;
+}
+
+#about {
+  width: 100%;
+  background: linear-gradient(195.7060875575deg, #1c1c1c 12.7105523967%, rgb(5, 5, 7) 100%);
+  padding: 80px 120px;
+  border-radius: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+}
+#about .section__content {
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+#about .section__content h3.content__title {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: rgb(255, 255, 255);
+}
+#about .section__content p.content__desc {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#about .section__content .content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#about .section__content .content__list .list__item {
+  display: flex;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#about .section__content .content__list .list__item b {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+#about .section__content .content__list .list__item::before {
+  content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' style='fill: rgba(255, 255, 255, 1);transform: ;msFilter:;'><path d='m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z'></path></svg>");
+  margin-right: 8px;
+}
+#about .section__content .content__button {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 18px;
+  background-color: rgb(31, 122, 140);
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.1s all linear;
+}
+#about .section__content .content__button:hover {
+  background-color: rgb(2, 43, 58);
+}
+#about .section__spline {
+  flex: 1 0 0px;
+  height: 640px;
+}
+
+#faqs {
+  padding: 120px 80px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+#faqs .faqs__container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+#faqs .faqs__container .faqs__content {
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background: linear-gradient(rgb(252, 252, 252) 0%, rgb(245, 245, 245) 100%);
+  cursor: pointer;
+}
+#faqs .faqs__container .faqs__content:hover {
+  background: linear-gradient(rgb(240, 240, 240) 0%, rgb(237, 235, 235) 100%);
+}
+#faqs .faqs__container .faqs__content .content__ask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#faqs .faqs__container .faqs__content .content__ask h4.ask__ask {
+  width: 90%;
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+}
+#faqs .faqs__container .faqs__content .content__ask #ask__icon {
+  width: 10%;
+  width: 41.15px;
+  height: 41.15px;
+}
+#faqs .faqs__container .faqs__content p.content__answer {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(54, 53, 53);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+#faqs .faqs__container .faqs__content p.content__answer.visible {
+  max-height: 200px;
+  opacity: 1;
+}
+#faqs .faqs__container .faqs__content.visible {
+  background: linear-gradient(rgb(245, 255, 249) 0%, rgb(251, 255, 242) 100%);
+}
+#faqs .faqs__container .faqs__content.visible:hover {
+  background: linear-gradient(rgb(237, 246, 255) 0%, rgb(242, 255, 249) 100%);
+}
+
+#contact {
+  padding: 120px 80px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+}
+#contact form.contact__form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+#contact form.contact__form .form__info-text {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(54, 53, 53);
+  opacity: 0.5;
+}
+#contact form.contact__form .form__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+#contact form.contact__form .form__group .group__input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#contact form.contact__form .form__group .group__input .input__label {
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  color: rgb(0, 0, 0);
+}
+#contact form.contact__form .form__group .group__input input {
+  padding: 15px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(54, 53, 53);
+  background-color: rgba(0, 0, 0, 0.0352941176);
+  border: none;
+  border-radius: 8px;
+}
+#contact form.contact__form .form__group .group__input select {
+  padding: 15px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(54, 53, 53);
+  background-color: rgba(0, 0, 0, 0.0352941176);
+  border: none;
+  border-radius: 8px;
+}
+#contact form.contact__form .form__group .group__input textarea {
+  padding: 15px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(54, 53, 53);
+  background-color: rgba(0, 0, 0, 0.0352941176);
+  border: none;
+  border-radius: 8px;
+}
+#contact form.contact__form .form__group input#form__submit {
+  width: 100%;
+  padding: 15px;
+  font-family: "Clash Display", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 122, 140);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.1s all linear;
+}
+#contact form.contact__form .form__group input#form__submit:hover {
+  background-color: rgb(2, 43, 58);
+}
+#contact form.contact__form .form__group.double .group__input {
+  width: 50%;
+}
+#contact form.contact__form .form__group.single .group__input {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1450px) {
+  /* Navbar */
+  .navbar__container {
+    position: sticky;
+    top: 0;
+    width: auto;
+  }
+  .navbar__container .navbar__content {
+    gap: 40px;
+  }
+  .navbar__container .navbar__content .navbar__title .title__name {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .navbar__container .navbar__content .navbar__nav .navbar__list {
+    gap: 12px;
+  }
+  .navbar__container .navbar__content .navbar__nav .navbar__list .navbar__list_item .navbar__item_link {
+    font-size: 14px;
+    line-height: 14px;
+    gap: 2px;
+  }
+  .navbar__container .navbar__content .navbar__nav .navbar__list .navbar__list_item .navbar__item_link lord-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .navbar__container .navbar__content .navbar__buttons .buttons__button {
+    padding: 0 20px;
+    height: 40px;
+  }
+  .navbar__container .navbar__content .navbar__buttons .buttons__button .button__link {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* Main */
+  #main .main__spline {
+    width: 100%;
+  }
+  #main .main__spline img {
+    width: 80%;
+  }
+  /* WhyMe */
+  #whyme {
+    width: 100%;
+  }
+  /* Steps */
+  #steps {
+    width: 100%;
+  }
+  /* Contact */
+  #contact {
+    padding: 100px 80px 120px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  /* Main */
+  #main {
+    padding: 80px;
+  }
+  /* Personal */
+  #about {
+    padding: 80px;
+    gap: 48px;
+  }
+  /* FAQs */
+  #faqs .faqs__container {
+    width: 100%;
+  }
+  /* Footer */
+  .footer__container {
+    padding: 80px 100px;
+  }
+}
+@media only screen and (max-width: 967px) {
+  /* Main */
+  #main .main__spline {
+    display: none;
+  }
+  /* WhyMe */
+  #whyme {
+    padding: 80px;
+  }
+  #whyme .whyme__list .whyme__card {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #whyme .whyme__list .whyme__card .card__content {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+  /* Projects */
+  #projects {
+    padding: 80px;
+  }
+  #projects .projects__list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  /* Services */
+  #services .services__list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  /* Personal */
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .section__spline {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* General */
+  .header__content .header__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  /* Navbar */
+  .navbar__container {
+    width: 100%;
+  }
+  .navbar__container .navbar__content {
+    gap: 12px;
+    padding: 12px 20px 12px 12px;
+  }
+  .navbar__container .navbar__content .navbar__buttons {
+    display: none;
+  }
+  /* Main */
+  #main {
+    padding: 40px;
+  }
+  #main .main__content {
+    gap: 30px;
+  }
+  #main .main__content .content__main {
+    gap: 20px;
+  }
+  #main .main__content .content__main .main__title {
+    font-size: 52px;
+    line-height: 59px;
+  }
+  /* WhyMe */
+  #whyme {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  #whyme .whyme__list .whyme__card {
+    padding: 46px;
+  }
+  #whyme .whyme__list .whyme__card .card__content {
+    gap: 20px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header {
+    gap: 10px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header .content__title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  #whyme .whyme__list .whyme__card .card__image {
+    width: 100%;
+  }
+  /* Projects */
+  #projects {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  #projects .projects__list {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  #projects .projects__list .project__card .card__image {
+    max-height: none;
+  }
+  /* Steps */
+  #steps {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  #steps .steps__list {
+    max-width: none;
+  }
+  /* Services */
+  #services {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  /* FAQs */
+  #faqs {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  #faqs .faqs__container .faqs__content {
+    padding: 26px;
+  }
+  #faqs .faqs__container .faqs__content .content__ask {
+    gap: 12px;
+  }
+  /* Footer */
+  .footer__container {
+    padding: 80px;
+  }
+  /* Contact */
+  #contact {
+    padding: 80px 80px 100px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  /* General */
+  .header__content .header__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  /* Navbar */
+  .navbar__container {
+    width: 100%;
+  }
+  .navbar__container .navbar__content {
+    gap: 12px;
+    padding: 12px 20px 12px 12px;
+  }
+  .navbar__container .navbar__content .navbar__buttons {
+    display: none;
+  }
+  /* Main */
+  #main .main__content .main__buttons {
+    margin-top: 0;
+  }
+  #main .main__content .main__buttons .main__button {
+    width: 250px;
+    padding: 4px;
+  }
+  #main .main__content .main__buttons .main__button .button_primary a,
+  #main .main__content .main__buttons .main__button .button_secondary a {
+    width: auto;
+  }
+  /* Services */
+  #services .services__list {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+  #services .services__list .services__card {
+    padding: 30px;
+    height: 300px;
+  }
+  /* Personal */
+  #about {
+    padding: 40px 50px;
+    gap: 48px;
+  }
+  #about .section__spline {
+    width: 100%;
+  }
+  /* Contact */
+  #contact form.contact__form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar__container {
+    width: auto;
+  }
+  .navbar__container .navbar__content {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+  /* Contact */
+  #contact {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* General */
+  .header__content {
+    gap: 8px;
+  }
+  .header__content .header__subtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .header__content .header__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .header__content .header__desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* Navbar */
+  .navbar__container {
+    width: auto;
+  }
+  .navbar__container .navbar__content {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+  /* Main */
+  #main .main__content .content__main .main__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  #main .main__content .main__buttons {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  #main .main__content .main__buttons .main__button {
+    width: 100%;
+  }
+  #main .main__content .main__buttons .main__button .button_primary a,
+  #main .main__content .main__buttons .main__button .button_secondary a {
+    padding: 20px 0;
+  }
+  /* WhyMe */
+  #whyme {
+    padding: 30px;
+  }
+  #whyme .whyme__list .whyme__card {
+    padding: 36px;
+    gap: 26px;
+  }
+  #whyme .whyme__list .whyme__card .card__content {
+    gap: 16px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header {
+    gap: 8px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header .content__subtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header .content__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* Projects */
+  #projects {
+    padding: 30px;
+    gap: 20px;
+  }
+  /* Steps */
+  #steps {
+    padding: 30px;
+    gap: 20px;
+  }
+  #steps .steps__list .card__content {
+    padding: 12px;
+  }
+  #steps .steps__list .card__content .content__desc {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  #steps .steps__list .steps__card {
+    gap: 6px;
+  }
+  #steps .steps__list .steps__card .card__step .step__step .step__name {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  /* Services */
+  #services {
+    padding: 30px;
+  }
+  #services .services__list .services__card {
+    padding: 20px;
+    height: auto;
+    gap: 8px;
+  }
+  #services .services__list .services__card .card__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+  #services .services__list .services__card .card__icon lord-icon {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  #services .services__list .services__card .card__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  #services .services__list .services__card .card__desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* Personal */
+  #about .section__content {
+    gap: 18px;
+  }
+  #about .section__content h3.content__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  #about .section__content p.content__desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #about .section__content .content__list .list__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #about .section__spline {
+    display: none;
+  }
+  /* FAQs */
+  #faqs {
+    padding: 30px;
+  }
+  #faqs .faqs__container .faqs__content {
+    padding: 20px;
+  }
+  #faqs .faqs__container .faqs__content .content__ask h4.ask__ask {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  #faqs .faqs__container .faqs__content .content__ask #ask__icon {
+    width: 30px;
+    height: 30px;
+  }
+  #faqs .faqs__container .faqs__content p.content__answer {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #faqs .faqs__container .faqs__content.visible {
+    gap: 8px;
+  }
+  /* Footer */
+  .footer__container {
+    padding: 30px;
+  }
+  .footer__container .footer__content {
+    gap: 25px;
+  }
+  .footer__container .footer__content .content__info .info__texts .texts__name h2 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .footer__container .footer__content .content__info .info__texts .texts__type p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* Contact */
+  #contact {
+    gap: 30px;
+  }
+  #contact form.contact__form .form__group.double {
+    flex-direction: column;
+  }
+  #contact form.contact__form .form__group.double .group__input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* Navbar */
+  .navbar__container .navbar__content .navbar__nav .navbar__list .navbar__list_item:nth-child(2) {
+    display: none;
+  }
+  /* Main */
+  #main .main__content .content__main .main__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  #main .main__content .main__buttons {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  #main .main__content .main__buttons .main__button {
+    width: 100%;
+  }
+  #main .main__content .main__buttons .main__button .button_primary a,
+  #main .main__content .main__buttons .main__button .button_secondary a {
+    padding: 20px 0;
+  }
+  /* WhyMe */
+  #whyme {
+    padding: 30px;
+  }
+  #whyme .whyme__list .whyme__card {
+    padding: 36px;
+    gap: 26px;
+  }
+  #whyme .whyme__list .whyme__card .card__content {
+    gap: 16px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header {
+    gap: 8px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header .content__subtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__header .content__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #whyme .whyme__list .whyme__card .card__content .content__desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* Projects */
+  #projects {
+    padding: 30px;
+    gap: 20px;
+  }
+  /* Steps */
+  #steps {
+    padding: 30px;
+    gap: 20px;
+  }
+  #steps .steps__list .card__content {
+    padding: 12px;
+  }
+  #steps .steps__list .card__content .content__desc {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  #steps .steps__list .steps__card {
+    gap: 6px;
+  }
+  #steps .steps__list .steps__card .card__step .step__step .step__name {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  /* Services */
+  #services {
+    padding: 30px;
+  }
+  #services .services__list .services__card {
+    padding: 20px;
+    height: auto;
+    gap: 8px;
+  }
+  #services .services__list .services__card .card__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+  #services .services__list .services__card .card__icon lord-icon {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  #services .services__list .services__card .card__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  #services .services__list .services__card .card__desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* Personal */
+  #about .section__content {
+    gap: 18px;
+  }
+  #about .section__content h3.content__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  #about .section__content p.content__desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #about .section__content .content__list .list__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #about .section__spline {
+    display: none;
+  }
+  /* FAQs */
+  #faqs {
+    padding: 30px;
+  }
+  #faqs .faqs__container .faqs__content {
+    padding: 20px;
+  }
+  #faqs .faqs__container .faqs__content .content__ask h4.ask__ask {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  #faqs .faqs__container .faqs__content .content__ask #ask__icon {
+    width: 30px;
+    height: 30px;
+  }
+  #faqs .faqs__container .faqs__content p.content__answer {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #faqs .faqs__container .faqs__content.visible {
+    gap: 8px;
+  }
+  /* Footer */
+  .footer__container {
+    padding: 30px;
+  }
+  .footer__container .footer__content {
+    gap: 25px;
+  }
+  .footer__container .footer__content .content__info .info__texts .texts__name h2 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .footer__container .footer__content .content__info .info__texts .texts__type p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* Contact */
+  #contact form.contact__form .form__group input#form__submit {
+    font-size: 18px;
+  }
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background: rgb(248, 248, 248);
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.container {
+  width: 1144px;
+  margin: 0 auto;
+}
+
+spline-viewer #logo {
+  display: none !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

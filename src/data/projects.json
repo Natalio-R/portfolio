@@ -1,0 +1,36 @@
+[
+    {
+        "id": "PR_001",
+        "src_image": "Pr001Img",
+        "src_web": "https://nataliorabasco.com/",
+        "src_local": "https://nataliorabasco.com/",
+        "name": "Portfolio",
+        "customer": "Natalio Rabasco",
+        "date": "20/05/2024",
+        "desc_short": "Portfolio personal.",
+        "desc_01": "Descripción"
+    },
+    {
+        "id": "PR_002",
+        "src_image": "Pr002Img",
+        "src_web": "https://fractalagency.es/",
+        "src_local": "https://nataliorabasco.com/fractal-agency/",
+        "name": "Fractal Agency",
+        "customer": "Natalio Rabasco & Manuel Serna",
+        "date": "27/07/2023",
+        "desc_short": "Agencia digital especializada en el desarrollo y diseño web.",
+        "desc_01": "Descripción",
+        "desc_02": "Descripción"
+    },
+    {
+        "id": "PR_003",
+        "src_image": "Pr003Img",
+        "src_web": "https:upcase.es/",
+        "src_local": "https://nataliorabasco.com/upcase",
+        "name": "Proximamente...",
+        "customer": "Natalio Rabasco",
+        "date": "12/03/2024",
+        "desc_short": "Tienda Online sobre accesorios para dispositivos Apple.",
+        "desc_01": "Descripción"
+    }
+]

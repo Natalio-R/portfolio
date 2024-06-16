@@ -1,0 +1,27 @@
+[
+    {
+        "id": "001",
+        "question": "¿Cuánto tiempo se tarda en construir un sitio web?",
+        "answer": "Un proyecto típico tomará desde 4-8 semanas hasta 12 meses, y su ubicación en ese rango depende del tamaño del sitio web (es decir, cuántas páginas), complejidad de diseño y la velocidad de retroalimentación y comunicación."
+    },
+    {
+        "id": "002",
+        "question": "¿Cuánto cuesta un sitio web?",
+        "answer": "Hay muchos factores que influyen en cuánto termina costando un sitio web, pero utilizo precios estandarizados para que sepa que siempre está pagando un precio justo. La mayoría de los sitios web nuevos caerán en el rango de 600€-10k€. Sin embargo, todas las situaciones son diferentes, así que póngase en contacto ya sea conmigo o con mi agencia(Fractal Agency) y le daré un presupuesto."
+    },
+    {
+        "id": "003",
+        "question": "Ya tengo un diseño. ¿Puedes construirlo?",
+        "answer": "¡Sí! Puedo participar en cualquier etapa del proceso."
+    },
+    {
+        "id": "004",
+        "question": "¿Qué pasa si no me gusta el diseño?",
+        "answer": "Tengo una garantía de devolución del 100% del dinero hasta que vea el primer borrador del diseño, así que si no le gusta en ese momento, le reembolsaré el depósito."
+    },
+    {
+        "id": "005",
+        "question": "El tiempo de carga es importante para mí. ¿El sitio web se cargará rápidamente?",
+        "answer": "¡Sí! Soy excelente para crear sitios web de carga rápida. Revisa mi sitio en GTMetrix para verlo por ti mismo."
+    }
+]

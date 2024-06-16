@@ -1,0 +1,96 @@
+#about {
+  width: 100%;
+  background: linear-gradient(
+    195.70608755753852deg,
+    #1c1c1c 12.710552396727165%,
+    rgba(5, 5, 7, 1) 100%
+  );
+  padding: 80px 120px;
+  border-radius: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+
+  .section__content {
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 24px;
+
+    h3.content__title {
+      font-family: "Clash Display", "Poppins", system-ui, -apple-system,
+        "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      color: $white;
+    }
+
+    p.content__desc {
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .content__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .list__item {
+        display: flex;
+        font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+          Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6);
+
+        b {
+          font-weight: 700;
+          color: $white;
+        }
+
+        &::before {
+          content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' style='fill: rgba(255, 255, 255, 1);transform: ;msFilter:;'><path d='m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z'></path></svg>");
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .content__button {
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 18px;
+      background-color: $primary;
+      font-family: "Clash Display", "Poppins", system-ui, -apple-system,
+        "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+      cursor: pointer;
+      transition: 0.1s all linear;
+
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  .section__spline {
+    flex: 1 0 0px;
+    height: 640px;
+  }
+}
