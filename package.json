@@ -3,19 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@splinetool/runtime": "^1.0.53",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@splinetool/runtime": "^1.6.9",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
     "emailjs-com": "^3.2.0",
     "nodemailer": "^6.9.13",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "5.0.1",
-    "sass": "^1.69.5",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "^5.0.1",
+    "sass": "^1.77.6",
+    "web-vitals": "^4.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,16 +42,5 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Natalio-R/portfolio.githttps:.git"
-  },
-  "author": "Natalio R",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Natalio-R/portfolio.githttps:/issues"
-  },
-  "homepage": "https://github.com/Natalio-R/portfolio.githttps:#readme"
+  "main": "index.js"
 }
