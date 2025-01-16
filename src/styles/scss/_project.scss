@@ -1,0 +1,105 @@
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+
+  .grid__list.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+
+    .project__container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+
+      .project__icon {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        background-color: $background;
+        border: 1px solid $border;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition-duration: 0.3s;
+        animation-duration: 0.3s;
+
+        svg {
+          color: $muted-foreground;
+        }
+
+        .bg-style {
+          position: absolute;
+          background-image: linear-gradient(to bottom left, $gradient-stops);
+          mix-blend-mode: overlay;
+          inset: 0;
+        }
+      }
+
+      &:hover {
+        .project__icon {
+          offset: 1px;
+          $ring-shadow: 0 0 0 5px $ring;
+          box-shadow: $ring-offset-shadow, $ring-shadow, 0 0 #0000, 0 0 #0000;
+
+          svg {
+            color: $primary;
+          }
+        }
+
+        .project__name {
+          color: $primary;
+        }
+      }
+
+      .project__name {
+        font-family: "GeistSans";
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $muted-foreground;
+      }
+    }
+  }
+}
+
+body.dark {
+  section.section__container {
+    .grid__list.row {
+      .project__container {
+        .project__icon {
+          background-color: $dark-background;
+          border: 1px solid $dark-border;
+          svg {
+            color: $dark-muted-foreground;
+          }
+          .bg-style {
+            background-image: linear-gradient(to bottom left, $dark-gradient-stops);
+          }
+        }
+        &:hover {
+          .project__icon {
+            $ring-shadow: 0 0 0 5px $dark-ring;
+            box-shadow: $dark-ring-offset-shadow, $ring-shadow, 0 0 #0000, 0 0 #0000;
+            svg {
+              color: $dark-primary;
+            }
+          }
+          .project__name {
+            color: $dark-primary;
+          }
+        }
+        .project__name {
+          color: $dark-muted-foreground;
+        }
+      }
+    }
+  }
+}

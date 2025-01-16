@@ -1,0 +1,844 @@
+/* Colors */
+/* Typography */
+@font-face {
+  font-family: GeistMono;
+  src: url("../../assets/fonts/webfonts/GeistMono-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: GeistSans;
+  src: url("../../assets/fonts/webfonts/Geist-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: GeistSans;
+  src: url("../../assets/fonts/webfonts/Geist-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: GeistSans;
+  src: url("../../assets/fonts/webfonts/Geist-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 900;
+}
+header.navbar__header {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  width: max-content;
+  height: 58px;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: hsl(200, 5%, 79%);
+  border-width: 1px;
+  border-radius: calc(0.5rem + 12px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
+  color: hsl(0, 0%, 3.9%);
+  z-index: 999;
+}
+header.navbar__header .navbar__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  transition-duration: 0.15s;
+  background-color: transparent;
+  cursor: pointer;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+header.navbar__header .navbar__link:hover {
+  color: hsl(0, 0%, 9%);
+  background-color: hsl(0, 0%, 96.1%);
+}
+header.navbar__header .navbar__link svg {
+  pointer-events: none;
+}
+header.navbar__header .navbar__link .light {
+  display: none;
+}
+header.navbar__header .navbar__link .dark {
+  display: flex;
+}
+header.navbar__header .navbar__link.home::before {
+  content: "Inicio";
+  position: absolute;
+  top: -30px;
+  width: max-content;
+  padding: 2px 12px;
+  background-color: hsl(200, 5%, 85%);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  color: hsl(0, 0%, 3.9%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.6rem;
+  color: hsl(0, 0%, 3.9%);
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.15s all ease-in-out;
+}
+header.navbar__header .navbar__link.home:hover::before {
+  top: -45px;
+  visibility: visible;
+  opacity: 1;
+}
+header.navbar__header .navbar__link.instagram::before {
+  content: "Instagram";
+  position: absolute;
+  top: -30px;
+  width: max-content;
+  padding: 2px 12px;
+  background-color: hsl(200, 5%, 85%);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  color: hsl(0, 0%, 3.9%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.6rem;
+  color: hsl(0, 0%, 3.9%);
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.15s all ease-in-out;
+}
+header.navbar__header .navbar__link.instagram:hover::before {
+  top: -45px;
+  visibility: visible;
+  opacity: 1;
+}
+header.navbar__header .navbar__link.linkedin::before {
+  content: "LinkedIn";
+  position: absolute;
+  top: -30px;
+  width: max-content;
+  padding: 2px 12px;
+  background-color: hsl(200, 5%, 85%);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  color: hsl(0, 0%, 3.9%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.6rem;
+  color: hsl(0, 0%, 3.9%);
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.15s all ease-in-out;
+}
+header.navbar__header .navbar__link.linkedin:hover::before {
+  top: -45px;
+  visibility: visible;
+  opacity: 1;
+}
+header.navbar__header .navbar__link.github::before {
+  content: "GitHub";
+  position: absolute;
+  top: -30px;
+  width: max-content;
+  padding: 2px 12px;
+  background-color: hsl(200, 5%, 85%);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  color: hsl(0, 0%, 3.9%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.6rem;
+  color: hsl(0, 0%, 3.9%);
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.15s all ease-in-out;
+}
+header.navbar__header .navbar__link.github:hover::before {
+  top: -45px;
+  visibility: visible;
+  opacity: 1;
+}
+header.navbar__header .navbar__link.theme::before {
+  content: "Cambiar tema";
+  position: absolute;
+  width: max-content;
+  top: -30px;
+  padding: 2px 12px;
+  background-color: hsl(200, 5%, 85%);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  color: hsl(0, 0%, 3.9%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.6rem;
+  color: hsl(0, 0%, 3.9%);
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.15s all ease-in-out;
+}
+header.navbar__header .navbar__link.theme:hover::before {
+  top: -45px;
+  visibility: visible;
+  opacity: 1;
+}
+header.navbar__header .separate {
+  width: 1px;
+  height: 100%;
+  background-color: hsl(200, 5%, 79%);
+}
+
+body.dark header.navbar__header {
+  border-color: hsl(200, 5%, 21%);
+}
+body.dark header.navbar__header .navbar__link:hover {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 14.9%);
+}
+body.dark header.navbar__header .navbar__link .light {
+  display: flex;
+}
+body.dark header.navbar__header .navbar__link .dark {
+  display: none;
+}
+body.dark header.navbar__header .separate {
+  background-color: hsl(200, 5%, 21%);
+}
+body.dark header.navbar__header .navbar__link.home::before {
+  content: "Inicio";
+  background-color: hsl(200, 5%, 15%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark header.navbar__header .navbar__link.instagram::before {
+  content: "Instagram";
+  background-color: hsl(200, 5%, 15%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark header.navbar__header .navbar__link.linkedin::before {
+  content: "LinkedIn";
+  background-color: hsl(200, 5%, 15%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark header.navbar__header .navbar__link.github::before {
+  content: "GitHub";
+  background-color: hsl(200, 5%, 15%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark header.navbar__header .navbar__link.theme::before {
+  content: "Cambiar tema";
+  background-color: hsl(200, 5%, 15%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+
+main.main__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+}
+main.main__container .section__name {
+  visibility: hidden;
+  opacity: 0;
+}
+main.main__container .grid__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+main.main__container .grid__content .main__image {
+  width: 100px;
+  height: 100px;
+  outline: 5px solid hsl(200, 5%, 79%);
+  border-radius: 9999px;
+  background-image: url("../../assets/profile.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main.main__container .grid__content .main__name {
+  font-family: "GeistSans";
+  font-weight: 900;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+  color: hsl(0, 0%, 3.9%);
+}
+
+body.dark main.main__container .main__image {
+  outline: 5px solid hsl(200, 5%, 21%);
+}
+body.dark main.main__container .main__name {
+  color: hsl(0, 0%, 98%);
+}
+
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+}
+section.section__container .grid__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.625rem;
+}
+section.section__container .grid__content .content__text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: hsl(200, 5%, 34%);
+}
+section.section__container .grid__content .content__text a {
+  color: hsl(0, 0%, 9%);
+}
+section.section__container .grid__content .content__text a svg {
+  padding-top: 2px;
+  margin-left: 2px;
+}
+section.section__container .grid__content .content__text span {
+  padding: 3px 0.375rem;
+  vertical-align: baseline;
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(200, 5%, 34%);
+}
+section.section__container .grid__content .content__text span.programming {
+  background-color: hsla(90, 19%, 86%, 0.9);
+}
+section.section__container .grid__content .content__text span.design {
+  background-color: rgba(226, 223, 236, 0.9);
+}
+
+body.dark section.section__container .grid__content .content__text {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__content .content__text a {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__content .content__text span {
+  border: 1px solid hsl(200, 5%, 21%);
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__content .content__text span.programming {
+  background-color: rgba(91, 111, 77, 0.15);
+}
+body.dark section.section__container .grid__content .content__text span.design {
+  background-color: rgba(112, 96, 139, 0.15);
+}
+
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+}
+section.section__container .grid__list.esp {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+section.section__container .grid__list.esp .study__container {
+  position: relative;
+  padding: 0.75rem 1rem;
+  background-color: hsl(200, 5%, 91%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: calc(0.5rem + 4px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+section.section__container .grid__list.esp .study__container:hover {
+  offset: 1px;
+  box-shadow: 0 0 0 1px hsl(200, 5%, 91%), 0 0 0 5px hsl(200, 5%, 79%), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+section.section__container .grid__list.esp .study__container .study__date-link {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+section.section__container .grid__list.esp .study__container .study__date-link .study__date-range {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+section.section__container .grid__list.esp .study__container .study__date-link .study__date-range .date-start,
+section.section__container .grid__list.esp .study__container .study__date-link .study__date-range .date-end {
+  font-family: "GeistSans";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: hsl(200, 5%, 34%);
+  opacity: 0.75;
+}
+section.section__container .grid__list.esp .study__container .study__date-link .study__date-range .separate {
+  width: 10px;
+  height: 1px;
+  background-color: hsl(200, 5%, 79%);
+}
+section.section__container .grid__list.esp .study__container .study__name {
+  font-family: "GeistSans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.025rem;
+  margin-bottom: 0.25rem;
+  color: hsl(0, 0%, 9%);
+}
+section.section__container .grid__list.esp .study__container .study__info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+section.section__container .grid__list.esp .study__container .study__info .study__type,
+section.section__container .grid__list.esp .study__container .study__info .study__place {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+section.section__container .grid__list.esp .study__container .study__info .study__type svg,
+section.section__container .grid__list.esp .study__container .study__info .study__place svg {
+  color: hsl(200, 5%, 34%);
+}
+section.section__container .grid__list.esp .study__container .study__info .study__type .type__name,
+section.section__container .grid__list.esp .study__container .study__info .study__type .place__name,
+section.section__container .grid__list.esp .study__container .study__info .study__place .type__name,
+section.section__container .grid__list.esp .study__container .study__info .study__place .place__name {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: hsl(200, 5%, 34%);
+  opacity: 0.75;
+}
+section.section__container .grid__list.esp .study__container .study__info .separate {
+  width: 10px;
+  height: 1px;
+  background-color: hsl(200, 5%, 79%);
+}
+section.section__container .grid__list.esp .study__container .bg-style {
+  position: absolute;
+  background-image: linear-gradient(to bottom left, #a3a3a3, #404040);
+  mix-blend-mode: overlay;
+  inset: 0;
+}
+
+body.dark section.section__container .grid__list .study__container {
+  background-color: hsl(180, 4%, 11%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .study__container:hover {
+  box-shadow: 0 0 0 1px hsl(180, 4%, 11%), 0 0 0 5px hsl(200, 5%, 21%), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+body.dark section.section__container .grid__list .study__container:hover .study__external-link svg {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__list .study__container .study__date-link .study__date-range .date-start,
+body.dark section.section__container .grid__list .study__container .study__date-link .study__date-range .date-end {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list .study__container .study__date-link .study__date-range .separate {
+  background-color: hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .study__container .study__date-link .study__external-link {
+  background-color: hsl(200, 5%, 16%);
+  color: hsl(0, 0%, 56%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .study__container .study__name {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__list .study__container .study__info .study__type svg,
+body.dark section.section__container .grid__list .study__container .study__info .study__place svg {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list .study__container .study__info .study__type .type__name,
+body.dark section.section__container .grid__list .study__container .study__info .study__type .place__name,
+body.dark section.section__container .grid__list .study__container .study__info .study__place .type__name,
+body.dark section.section__container .grid__list .study__container .study__info .study__place .place__name {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list .study__container .study__info .separate {
+  background-color: hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .study__container .bg-style {
+  background-image: linear-gradient(to bottom left, #e5e5e5, #737373);
+}
+
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+}
+section.section__container .grid__list.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+section.section__container .grid__list.row .project__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+section.section__container .grid__list.row .project__container .project__icon {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(200, 5%, 91%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+section.section__container .grid__list.row .project__container .project__icon svg {
+  color: hsl(200, 5%, 34%);
+}
+section.section__container .grid__list.row .project__container .project__icon .bg-style {
+  position: absolute;
+  background-image: linear-gradient(to bottom left, #a3a3a3, #404040);
+  mix-blend-mode: overlay;
+  inset: 0;
+}
+section.section__container .grid__list.row .project__container:hover .project__icon {
+  offset: 1px;
+  box-shadow: 0 0 0 1px hsl(200, 5%, 91%), 0 0 0 5px hsl(200, 5%, 79%), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+section.section__container .grid__list.row .project__container:hover .project__icon svg {
+  color: hsl(0, 0%, 9%);
+}
+section.section__container .grid__list.row .project__container:hover .project__name {
+  color: hsl(0, 0%, 9%);
+}
+section.section__container .grid__list.row .project__container .project__name {
+  font-family: "GeistSans";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(200, 5%, 34%);
+}
+
+body.dark section.section__container .grid__list.row .project__container .project__icon {
+  background-color: hsl(180, 4%, 11%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list.row .project__container .project__icon svg {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list.row .project__container .project__icon .bg-style {
+  background-image: linear-gradient(to bottom left, #e5e5e5, #737373);
+}
+body.dark section.section__container .grid__list.row .project__container:hover .project__icon {
+  box-shadow: 0 0 0 1px hsl(180, 4%, 11%), 0 0 0 5px hsl(200, 5%, 21%), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+body.dark section.section__container .grid__list.row .project__container:hover .project__icon svg {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__list.row .project__container:hover .project__name {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__list.row .project__container .project__name {
+  color: hsl(0, 0%, 56%);
+}
+
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+}
+section.section__container .grid__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+section.section__container .grid__list .work__container {
+  position: relative;
+  padding: 0.75rem 1rem;
+  background-color: hsl(200, 5%, 91%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: calc(0.5rem + 4px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+section.section__container .grid__list .work__container:hover {
+  offset: 1px;
+  box-shadow: 0 0 0 1px hsl(200, 5%, 91%), 0 0 0 5px hsl(200, 5%, 79%), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+section.section__container .grid__list .work__container:hover .work__external-link svg {
+  color: hsl(0, 0%, 9%);
+}
+section.section__container .grid__list .work__container .work__date-link {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+section.section__container .grid__list .work__container .work__date-link .work__date-range {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+section.section__container .grid__list .work__container .work__date-link .work__date-range .date-start,
+section.section__container .grid__list .work__container .work__date-link .work__date-range .date-end {
+  font-family: "GeistSans";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: hsl(200, 5%, 34%);
+  opacity: 0.75;
+}
+section.section__container .grid__list .work__container .work__date-link .work__date-range .separate {
+  width: 10px;
+  height: 1px;
+  background-color: hsl(200, 5%, 79%);
+}
+section.section__container .grid__list .work__container .work__date-link .work__external-link {
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: hsl(200, 5%, 89%);
+  color: hsl(200, 5%, 34%);
+  border: 1px solid hsl(200, 5%, 79%);
+  border-radius: calc(0.5rem - 4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.section__container .grid__list .work__container .work__name {
+  font-family: "GeistSans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.025rem;
+  margin-bottom: 0.25rem;
+  color: hsl(0, 0%, 9%);
+}
+section.section__container .grid__list .work__container .work__info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+section.section__container .grid__list .work__container .work__info .work__company,
+section.section__container .grid__list .work__container .work__info .work__place {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+section.section__container .grid__list .work__container .work__info .work__company svg,
+section.section__container .grid__list .work__container .work__info .work__place svg {
+  color: hsl(200, 5%, 34%);
+}
+section.section__container .grid__list .work__container .work__info .work__company .company__name,
+section.section__container .grid__list .work__container .work__info .work__company .place__name,
+section.section__container .grid__list .work__container .work__info .work__place .company__name,
+section.section__container .grid__list .work__container .work__info .work__place .place__name {
+  font-family: "GeistSans";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: hsl(200, 5%, 34%);
+  opacity: 0.75;
+}
+section.section__container .grid__list .work__container .work__info .separate {
+  width: 10px;
+  height: 1px;
+  background-color: hsl(200, 5%, 79%);
+}
+section.section__container .grid__list .work__container .bg-style {
+  position: absolute;
+  background-image: linear-gradient(to bottom left, #a3a3a3, #404040);
+  mix-blend-mode: overlay;
+  inset: 0;
+}
+
+body.dark section.section__container .grid__list .work__container {
+  background-color: hsl(180, 4%, 11%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .work__container:hover {
+  box-shadow: 0 0 0 1px hsl(180, 4%, 11%), 0 0 0 5px hsl(200, 5%, 21%), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+body.dark section.section__container .grid__list .work__container:hover .work__external-link svg {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__list .work__container .work__date-link .work__date-range .date-start,
+body.dark section.section__container .grid__list .work__container .work__date-link .work__date-range .date-end {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list .work__container .work__date-link .work__date-range .separate {
+  background-color: hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .work__container .work__date-link .work__external-link {
+  background-color: hsl(200, 5%, 16%);
+  color: hsl(0, 0%, 56%);
+  border: 1px solid hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .work__container .work__name {
+  color: hsl(0, 0%, 98%);
+}
+body.dark section.section__container .grid__list .work__container .work__info .work__company svg,
+body.dark section.section__container .grid__list .work__container .work__info .work__place svg {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list .work__container .work__info .work__company .company__name,
+body.dark section.section__container .grid__list .work__container .work__info .work__company .place__name,
+body.dark section.section__container .grid__list .work__container .work__info .work__place .company__name,
+body.dark section.section__container .grid__list .work__container .work__info .work__place .place__name {
+  color: hsl(0, 0%, 56%);
+}
+body.dark section.section__container .grid__list .work__container .work__info .separate {
+  background-color: hsl(200, 5%, 21%);
+}
+body.dark section.section__container .grid__list .work__container .bg-style {
+  background-image: linear-gradient(to bottom left, #e5e5e5, #737373);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(200, 5%, 91%);
+  font-family: "GeistSans", "GeistSans Fallback", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark {
+  background-color: hsl(180, 4%, 11%);
+}
+body.dark a::selection,
+body.dark p::selection,
+body.dark span::selection,
+body.dark h1::selection,
+body.dark h2::selection,
+body.dark h3::selection {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 14.9%);
+}
+body.dark .section__name {
+  color: hsl(0, 0%, 56%) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a::selection,
+p::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection {
+  background-color: hsl(0, 0%, 9%);
+  color: hsl(0, 0%, 96.1%);
+  opacity: 1;
+}
+
+.container__grid {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  width: 100%;
+  max-width: 750px;
+  align-items: flex-start;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+.container__grid .grid__section .section__name {
+  text-align: right;
+  text-transform: lowercase;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: hsl(200, 5%, 34%);
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container__grid {
+    padding: 0 1rem;
+  }
+  section.section__container .grid__list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container__grid {
+    padding: 0 1.25rem;
+    grid-template-columns: auto;
+  }
+  .container__grid .grid__section .section__name {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

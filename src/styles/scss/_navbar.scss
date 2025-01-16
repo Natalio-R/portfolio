@@ -1,0 +1,265 @@
+header.navbar__header {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  width: max-content;
+  height: 58px;
+  align-items: center;
+  gap: .5rem;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: $border;
+  border-width: 1px;
+  border-radius: calc(0.5rem + 12px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
+  color: $foreground;
+  z-index: 999;
+
+  .navbar__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    transition-duration: .15s;
+    background-color: transparent;
+    cursor: pointer;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      color: $accent-foreground;
+      background-color: $accent;
+    }
+
+    svg {
+      pointer-events: none;
+    }
+
+    .light {
+      display: none;
+    }
+
+    .dark {
+      display: flex;
+    }
+  }
+
+  .navbar__link.home {
+    &::before {
+      content: 'Inicio';
+      position: absolute;
+      top: -30px;
+      width: max-content;
+      padding: 2px 12px;
+      background-color: $card;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: -.025em;
+      color: $foreground;
+      border: 1px solid $border;
+      border-radius: .6rem;
+      color: $foreground;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      transition: .15s all ease-in-out;
+    }
+
+    &:hover::before {
+      top: -45px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .navbar__link.instagram {
+    &::before {
+      content: 'Instagram';
+      position: absolute;
+      top: -30px;
+      width: max-content;
+      padding: 2px 12px;
+      background-color: $card;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: -.025em;
+      color: $foreground;
+      border: 1px solid $border;
+      border-radius: .6rem;
+      color: $foreground;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      transition: .15s all ease-in-out;
+    }
+
+    &:hover::before {
+      top: -45px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .navbar__link.linkedin {
+    &::before {
+      content: 'LinkedIn';
+      position: absolute;
+      top: -30px;
+      width: max-content;
+      padding: 2px 12px;
+      background-color: $card;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: -.025em;
+      color: $foreground;
+      border: 1px solid $border;
+      border-radius: .6rem;
+      color: $foreground;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      transition: .15s all ease-in-out;
+    }
+
+    &:hover::before {
+      top: -45px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .navbar__link.github {
+    &::before {
+      content: 'GitHub';
+      position: absolute;
+      top: -30px;
+      width: max-content;
+      padding: 2px 12px;
+      background-color: $card;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: -.025em;
+      color: $foreground;
+      border: 1px solid $border;
+      border-radius: .6rem;
+      color: $foreground;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      transition: .15s all ease-in-out;
+    }
+
+    &:hover::before {
+      top: -45px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .navbar__link.theme {
+    &::before {
+      content: 'Cambiar tema';
+      position: absolute;
+      width: max-content;
+      top: -30px;
+      padding: 2px 12px;
+      background-color: $card;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 2rem;
+      letter-spacing: -.025em;
+      color: $foreground;
+      border: 1px solid $border;
+      border-radius: .6rem;
+      color: $foreground;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      transition: .15s all ease-in-out;
+    }
+    
+    &:hover::before {
+      top: -45px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .separate {
+    width: 1px;
+    height: 100%;
+    background-color: $border;
+  }
+}
+
+body.dark {
+  header.navbar__header {
+    border-color: $dark-border;
+    .navbar__link {
+      &:hover {
+        color: $dark-accent-foreground;
+        background-color: $dark-accent;
+      }
+      .light {
+        display: flex;
+      }
+      .dark {
+        display: none;
+      }
+    }
+    .separate {
+      background-color: $dark-border;
+    }
+    .navbar__link.home {
+      &::before {
+        content: 'Inicio';
+        background-color: $dark-card;
+        color: $dark-foreground;
+        border: 1px solid $dark-border;
+      }
+    }
+    .navbar__link.instagram {
+      &::before {
+        content: 'Instagram';
+        background-color: $dark-card;
+        color: $dark-foreground;
+        border: 1px solid $dark-border;
+      }
+    }
+    .navbar__link.linkedin {
+      &::before {
+        content: 'LinkedIn';
+        background-color: $dark-card;
+        color: $dark-foreground;
+        border: 1px solid $dark-border;
+      }
+    }
+    .navbar__link.github {
+      &::before {
+        content: 'GitHub';
+        background-color: $dark-card;
+        color: $dark-foreground;
+        border: 1px solid $dark-border;
+      }
+    }
+    .navbar__link.theme {
+      &::before {
+        content: 'Cambiar tema';
+        background-color: $dark-card;
+        color: $dark-foreground;
+        border: 1px solid $dark-border;
+      }
+    }
+  }
+}

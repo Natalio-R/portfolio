@@ -1,0 +1,97 @@
+@import "colors";
+@import "typography";
+@import "navbar";
+@import "header.scss";
+@import "about";
+@import "study";
+@import "project";
+@import "work";
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background;
+  font-family: $primary-font, ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark {
+  background-color: $dark-background;
+  a,
+  p,
+  span,
+  h1,
+  h2,
+  h3 {
+    &::selection {
+      background-color: $dark-accent-foreground;
+      color: $dark-accent;
+    }
+  }
+  .section__name {
+    color: $dark-muted-foreground !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+p,
+span,
+h1,
+h2,
+h3 {
+  &::selection {
+    background-color: $accent-foreground;
+    color: $accent;
+    opacity: 1;
+  }
+}
+
+.container__grid {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  width: 100%;
+  max-width: 750px;
+  align-items: flex-start;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+
+  .grid__section {
+    .section__name {
+      text-align: right;
+      text-transform: lowercase;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        Liberation Mono, Courier New, monospace;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      color: $muted-foreground;
+      opacity: 0.6;
+      margin-top: 8px;
+    }
+  }
+}
+
+@import "responsive";

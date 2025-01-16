@@ -1,0 +1,171 @@
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+
+  .grid__list.esp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+
+    .study__container {
+      position: relative;
+      padding: 0.75rem 1rem;
+      background-color: $background;
+      border: 1px solid $border;
+      border-radius: calc(0.5rem + 4px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      overflow: hidden;
+      transition-duration: 0.3s;
+      animation-duration: 0.3s;
+
+      &:hover {
+        offset: 1px;
+        $ring-shadow: 0 0 0 5px $ring;
+        box-shadow: $ring-offset-shadow, $ring-shadow, 0 0 #0000, 0 0 #0000;
+      }
+
+      .study__date-link {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .study__date-range {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 6px;
+
+          .date-start,
+          .date-end {
+            font-family: "GeistSans";
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: $muted-foreground;
+            opacity: 0.75;
+          }
+
+          .separate {
+            width: 10px;
+            height: 1px;
+            background-color: $border;
+          }
+        }
+      }
+
+      .study__name {
+        font-family: "GeistSans";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.025rem;
+        margin-bottom: 0.25rem;
+        color: $primary;
+      }
+
+      .study__info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .study__type,
+        .study__place {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 4px;
+
+          svg {
+            color: $muted-foreground;
+          }
+
+          .type__name,
+          .place__name {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: $muted-foreground;
+            opacity: 0.75;
+          }
+        }
+
+        .separate {
+          width: 10px;
+          height: 1px;
+          background-color: $border;
+        }
+      }
+
+      .bg-style {
+        position: absolute;
+        background-image: linear-gradient(to bottom left, $gradient-stops);
+        mix-blend-mode: overlay;
+        inset: 0;
+      }
+    }
+  }
+}
+
+body.dark {
+  section.section__container {
+    .grid__list {
+      .study__container {
+        background-color: $dark-background;
+        border: 1px solid $dark-border;
+        &:hover {
+          $ring-shadow: 0 0 0 5px $dark-ring;
+          box-shadow: $dark-ring-offset-shadow, $ring-shadow, 0 0 #0000, 0 0 #0000;
+          .study__external-link svg {
+            color: $dark-primary;
+          }
+        }
+        .study__date-link {
+          .study__date-range {
+            .date-start,
+            .date-end {
+              color: $dark-muted-foreground;
+            }
+            .separate {
+              background-color: $dark-border;
+            }
+          }
+          .study__external-link {
+            background-color: $dark-muted;
+            color: $dark-muted-foreground;
+            border: 1px solid $dark-border;
+          }
+        }
+        .study__name {
+          color: $dark-primary;
+        }
+        .study__info {
+          .study__type,
+          .study__place {
+            svg {
+              color: $dark-muted-foreground;
+            }
+            .type__name,
+            .place__name {
+              color: $dark-muted-foreground;
+            }
+          }
+          .separate {
+            background-color: $dark-border;
+          }
+        }
+        .bg-style {
+          background-image: linear-gradient(to bottom left, $dark-gradient-stops);
+        }
+      }
+    }
+  }
+}

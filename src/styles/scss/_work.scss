@@ -1,0 +1,190 @@
+section.section__container {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+
+  .grid__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    .work__container {
+      position: relative;
+      padding: 0.75rem 1rem;
+      background-color: $background;
+      border: 1px solid $border;
+      border-radius: calc(0.5rem + 4px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      overflow: hidden;
+      transition-duration: 0.3s;
+      animation-duration: 0.3s;
+
+      &:hover {
+        offset: 1px;
+        $ring-shadow: 0 0 0 5px $ring;
+        box-shadow: $ring-offset-shadow, $ring-shadow, 0 0 #0000, 0 0 #0000;
+
+        .work__external-link svg {
+          color: $primary;
+        }
+      }
+
+      .work__date-link {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .work__date-range {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 6px;
+
+          .date-start,
+          .date-end {
+            font-family: "GeistSans";
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: $muted-foreground;
+            opacity: 0.75;
+          }
+
+          .separate {
+            width: 10px;
+            height: 1px;
+            background-color: $border;
+          }
+        }
+
+        .work__external-link {
+          width: 1.25rem;
+          height: 1.25rem;
+          font-size: 0.75rem;
+          line-height: 1rem;
+          background-color: $muted;
+          color: $muted-foreground;
+          border: 1px solid $border;
+          border-radius: calc(0.5rem - 4px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .work__name {
+        font-family: "GeistSans";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.025rem;
+        margin-bottom: 0.25rem;
+        color: $primary;
+      }
+
+      .work__info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .work__company,
+        .work__place {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 4px;
+
+          svg {
+            color: $muted-foreground;
+          }
+
+          .company__name,
+          .place__name {
+            font-family: "GeistSans";
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: $muted-foreground;
+            opacity: 0.75;
+          }
+        }
+
+        .separate {
+          width: 10px;
+          height: 1px;
+          background-color: $border;
+        }
+      }
+
+      .bg-style {
+        position: absolute;
+        background-image: linear-gradient(to bottom left, $gradient-stops);
+        mix-blend-mode: overlay;
+        inset: 0;
+      }
+    }
+  }
+}
+
+body.dark {
+  section.section__container {
+    .grid__list {
+      .work__container {
+        background-color: $dark-background;
+        border: 1px solid $dark-border;
+        &:hover {
+          $ring-shadow: 0 0 0 5px $dark-ring;
+          box-shadow: $dark-ring-offset-shadow, $ring-shadow, 0 0 #0000, 0 0 #0000;
+          .work__external-link svg {
+            color: $dark-primary;
+          }
+        }
+        .work__date-link {
+          .work__date-range {
+            .date-start,
+            .date-end {
+              color: $dark-muted-foreground;
+            }
+            .separate {
+              background-color: $dark-border;
+            }
+          }
+          .work__external-link {
+            background-color: $dark-muted;
+            color: $dark-muted-foreground;
+            border: 1px solid $dark-border;
+          }
+        }
+        .work__name {
+          color: $dark-primary;
+        }
+        .work__info {
+          .work__company,
+          .work__place {
+            svg {
+              color: $dark-muted-foreground;
+            }
+            .company__name,
+            .place__name {
+              color: $dark-muted-foreground;
+            }
+          }
+          .separate {
+            background-color: $dark-border;
+          }
+        }
+        .bg-style {
+          background-image: linear-gradient(to bottom left, $dark-gradient-stops);
+        }
+      }
+    }
+  }
+}
