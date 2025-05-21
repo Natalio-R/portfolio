@@ -4,7 +4,7 @@ const Project = (props) => {
   const { link, icon: Icon, name } = props;
 
   return (
-    <a href={link} className="project__container">
+    <a href={link} className="project__container" target="_blank" rel="noreferrer">
       <div className="project__icon">
         <Icon size={16} />
         <div className="bg-style"></div>

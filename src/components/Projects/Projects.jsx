@@ -1,6 +1,6 @@
 import React from "react";
 import { Project } from "../../hooks/index";
-import { Globe, DollarSign, Layers} from "react-feather";
+import { Globe, Activity, Layers} from "react-feather";
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
         </div>
         <div className="grid__list row">
             <Project name="Fractal Agency" icon={Globe} link="https://fractalagency.es" />
-            <Project name="Crypto Search" icon={DollarSign} link="https://searchcrypto.netlify.app/" />
+            <Project name="Habituo App" icon={Activity} link="https://habituo.vercel.app/" />
             <Project name="PokeMosta" icon={Layers} link="https://pokemosta.netlify.app/" />
         </div>
       </div>
